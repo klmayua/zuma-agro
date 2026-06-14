@@ -1,130 +1,96 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f8faf6;
-  --foreground: #191c1a;
+  /* Primary Colors */
+  --color-primary: #005A43;
+  --color-primary-dark: #004D3A;
+  --color-primary-light: #006B53;
   
-  --font-libre-caslon: "Libre Caslon Text", serif;
-  --font-manrope: "Manrope", sans-serif;
-  --font-inter: "Inter", sans-serif;
+  /* Secondary Colors */
+  --color-secondary: #C9A03D;
+  --color-secondary-dark: #A68533;
+  --color-secondary-light: #D4AF37;
+  
+  /* Error Colors */
+  --color-error: #B63A3A;
+  --color-error-dark: #962E2E;
+  --color-error-light: #DC2626;
+  
+  /* Surface Colors */
+  --color-surface-ivory: #F8F8F4;
+  --color-surface-stone: #EAEDE8;
+  --color-surface-white: #FFFFFF;
+  --color-surface-charcoal: #18211D;
+  --color-surface-slate: #6B7280;
+  
+  /* Background */
+  --background: #F8F8F4;
+  --foreground: #18211D;
+  
+  /* Fonts */
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Libre Caslon Text', Georgia, serif;
 }
 
-@theme {
-  /* Colors mapping from Stitch design systems */
-  --color-primary: #005a43;
-  --color-secondary: #a8862d;
-  --color-tertiary: #d32f2f;
+@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  
-  --color-surface-container-lowest: #ffffff;
-  --color-surface-container-low: #f2f4f0;
-  --color-surface-container: #eceeeb;
-  --color-surface-container-high: #e7e9e5;
-  --color-surface-container-highest: #e1e3df;
-  --color-on-surface: #191c1a;
-  --color-on-surface-variant: #3f4944;
-  --color-outline: #6f7974;
-  --color-outline-variant: #bfc9c2;
-  
-  /* Font overrides */
-  --font-serif: var(--font-libre-caslon);
-  --font-sans: var(--font-manrope);
-  --font-inter: var(--font-inter);
-  
-  /* Radiuses mapping */
-  --radius-sm: 0.125rem;
-  --radius-DEFAULT: 0.25rem;
-  --radius-md: 0.375rem;
-  --radius-lg: 0.5rem;
-  --radius-xl: 0.75rem;
-  --radius-2xl: 1rem;
-  --radius-3xl: 1.5rem;
-  
-  /* Custom spacing coordinates */
-  --spacing-container-max: 1280px;
-  --spacing-stack-lg: 48px;
-  --spacing-margin-desktop: 64px;
-  --spacing-stack-sm: 12px;
-  --spacing-stack-md: 24px;
-  --spacing-margin-mobile: 20px;
-  --spacing-base: 8px;
-  --spacing-gutter: 24px;
+  --color-primary: var(--color-primary);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-primary-light: var(--color-primary-light);
+  --color-secondary: var(--color-secondary);
+  --color-secondary-dark: var(--color-secondary-dark);
+  --color-secondary-light: var(--color-secondary-light);
+  --color-error: var(--color-error);
+  --color-error-dark: var(--color-error-dark);
+  --color-error-light: var(--color-error-light);
+  --color-surface-ivory: var(--color-surface-ivory);
+  --color-surface-stone: var(--color-surface-stone);
+  --color-surface-white: var(--color-surface-white);
+  --color-surface-charcoal: var(--color-surface-charcoal);
+  --color-surface-slate: var(--color-surface-slate);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-manrope), sans-serif;
-  overflow-x: hidden;
+  font-family: var(--font-sans);
 }
 
-/* Hide duplicate page-specific headers and footers compiled from HTML */
-main header,
-main footer {
-  display: none !important;
+/* Custom Utilities */
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease forwards;
+  }
+  
+  .animate-ping-slow {
+    animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
 }
 
-/* Glassmorphism custom classes */
-.glass-card {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.glass-card-premium {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(32px);
-  -webkit-backdrop-filter: blur(32px);
-  border-top: 1px solid rgba(168, 134, 45, 0.2);
-  border-left: 1px solid rgba(168, 134, 45, 0.2);
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-/* Editorial desaturated image filtering */
-.editorial-img {
-  filter: contrast(1.05) saturate(0.85);
-  transition: filter 0.3s ease;
-}
-
-.editorial-img:hover {
-  filter: contrast(1.1) saturate(1.0);
-}
-
-/* Button & Link Hover Accents */
-.btn-gold-hover {
-  transition: all 0.3s ease;
-}
-
-.btn-gold-hover:hover {
-  outline: 2px solid #a8862d;
-  outline-offset: 2px;
-}
-
-/* Active navigation indicators */
-.nav-link-active {
-  border-bottom: 2px solid #a8862d;
-  color: #005a43;
-}
-
-/* Custom layout scrollbars for high-fidelity data tables */
-.custom-scrollbar::-webkit-scrollbar {
-  height: 6px;
-  width: 6px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-track {
-  background: #f2f4f0;
-  border-radius: 4px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #bfc9c2;
-  border-radius: 4px;
-}
-
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #6f7974;
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
