@@ -1,0 +1,416 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Zuma Agro-Allied - Impact &amp; National Multiplier Effects</title>
+<!-- Fonts & Icons -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config Injection -->
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-lowest": "#ffffff",
+                    "background": "#f8faf6",
+                    "secondary-fixed-dim": "#e9c263",
+                    "on-tertiary-container": "#ffaba3",
+                    "surface-variant": "#e1e3df",
+                    "on-primary-fixed-variant": "#00513c",
+                    "on-secondary-container": "#785b00",
+                    "on-primary-container": "#86cfb2",
+                    "on-primary-fixed": "#002116",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-tertiary-fixed": "#410003",
+                    "surface-container-low": "#f2f4f0",
+                    "primary-fixed": "#a7f2d3",
+                    "primary": "#005a43",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#e1e3df",
+                    "surface-tint": "#1d6a52",
+                    "surface-bright": "#f8faf6",
+                    "primary-fixed-dim": "#8cd5b8",
+                    "on-surface": "#191c1a",
+                    "secondary": "#a8862d",
+                    "outline": "#6f7974",
+                    "secondary-fixed": "#ffdf98",
+                    "on-error": "#ffffff",
+                    "on-primary": "#ffffff",
+                    "outline-variant": "#bfc9c2",
+                    "on-tertiary-fixed-variant": "#930010",
+                    "on-surface-variant": "#3f4944",
+                    "tertiary-container": "#a20012",
+                    "on-secondary-fixed": "#251a00",
+                    "on-background": "#191c1a",
+                    "on-secondary-fixed-variant": "#5a4300",
+                    "error-container": "#ffdad6",
+                    "error": "#ba1a1a",
+                    "tertiary": "#77000a",
+                    "on-secondary": "#ffffff",
+                    "inverse-on-surface": "#eff1ed",
+                    "surface-container-high": "#e7e9e5",
+                    "surface": "#f8faf6",
+                    "primary-container": "#005a43",
+                    "tertiary-fixed-dim": "#ffb3ac",
+                    "surface-dim": "#d8dbd7",
+                    "surface-container": "#eceeeb",
+                    "secondary-container": "#fed574",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#8cd5b8",
+                    "inverse-surface": "#2e312f",
+                    "premium-red": "#ba1a1a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem",
+                    "2xl": "1rem",
+                    "3xl": "1.5rem"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "stack-lg": "48px",
+                    "margin-desktop": "64px",
+                    "stack-sm": "12px",
+                    "stack-md": "24px",
+                    "margin-mobile": "20px",
+                    "base": "8px",
+                    "gutter": "24px",
+                    "xl": "32px",
+                    "md": "16px",
+                    "2xl": "48px",
+                    "sm": "8px",
+                    "xs": "4px",
+                    "unit": "8px",
+                    "lg": "24px",
+                    "3xl": "64px",
+                    "4xl": "96px"
+            },
+            "fontFamily": {
+                    "headline-md": [
+                            "Libre Caslon Text"
+                    ],
+                    "label-sm": [
+                            "Manrope"
+                    ],
+                    "display-lg-mobile": [
+                            "Libre Caslon Text"
+                    ],
+                    "body-lg": [
+                            "Manrope"
+                    ],
+                    "display-lg": [
+                            "Libre Caslon Text"
+                    ],
+                    "body-md": [
+                            "Manrope"
+                    ],
+                    "label-bold": [
+                            "Manrope"
+                    ],
+                    "headline-lg": [
+                            "Libre Caslon Text"
+                    ],
+                    "executive-caps": [
+                            "Manrope"
+                    ],
+                    "headline-xl": [
+                            "Libre Caslon Text"
+                    ],
+                    "label-md": [
+                            "Manrope"
+                    ],
+                    "headline-lg-mobile": [
+                            "Libre Caslon Text"
+                    ]
+            },
+            "fontSize": {
+                    "headline-md": [
+                            "24px",
+                            {
+                                    "lineHeight": "32px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-sm": [
+                            "12px",
+                            {
+                                    "lineHeight": "16px",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "36px",
+                            {
+                                    "lineHeight": "44px",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "28px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "56px",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "24px",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-bold": [
+                            "14px",
+                            {
+                                    "lineHeight": "20px",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-lg": [
+                            "32px",
+                            {
+                                    "lineHeight": "40px",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "executive-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}]
+            },
+            "boxShadow": {
+                "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+                "elevated": "0 10px 30px -5px rgba(0, 0, 0, 0.08)",
+                "institutional": "0 20px 40px -10px rgba(0, 0, 0, 0.1)"
+            }
+        },
+        },
+      }
+    </script>
+<style>
+        .paper-texture {
+            background-color: #f8faf6;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-white border-b border-outline-variant/20 z-50 transition-colors duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-5 md:py-6 w-full max-w-container-max mx-auto">
+<div class="flex items-center">
+<img alt="Zuma Agro Logo" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARTQl5245Oh9koSqCGm3zKlq5QYyK4hj1iu4ha4dzHclZHQIYc9knnHDvE7Xr4WcoiTaQnVb-lM5-YNVRzSHoxWphiQpIJkUldIu9Qo5Nqc0HwquKnAJwZbLX1dZZdWwXpS3HgsWknJSQoeCM3EUue3MdzO2PDTfX_WJQpNaVdMgSlDdjhOKLs5w7d5sCYK0zx6ACJWNst4gZySNXqPE0JlWjwtOXH2tKuRMgFe8dtnQNOAl_aSpguHzdqb_2IZMHXrYHYTvMbyic">
+</div>
+<nav class="hidden md:flex space-x-gutter"><a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer active:opacity-80" href="#">About</a>
+
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer active:opacity-80" href="#">Framework</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer active:opacity-80" href="#">Governance</a>
+<a class="font-executive-caps text-executive-caps text-secondary border-b border-secondary pb-2 cursor-pointer transition-all active:opacity-80" href="#">Impact</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer active:opacity-80" href="#">Investors</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer active:opacity-80" href="#">Partnership</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer active:opacity-80" href="#">Platform</a></nav>
+<button class="hidden md:inline-flex bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] items-center justify-center rounded hover:opacity-90 transition-colors shadow-lg flex gap-xs">
+                Executive Access
+                <span class="material-symbols-outlined text-[20px] ml-2" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section (Paper Texture) -->
+<section class="paper-texture py-stack-lg md:py-[120px] px-margin-mobile md:px-margin-desktop min-h-[716px] flex flex-col justify-center items-center text-center">
+<div class="max-w-container-max mx-auto space-y-stack-md">
+<span class="inline-block px-4 py-1 border border-primary text-primary rounded-full font-label-bold text-label-bold uppercase tracking-wider">National Imperative</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-4xl mx-auto leading-tight">
+                    Addressing the $6–10B Annual Food Import Bill
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-6">
+                    A systemic vulnerability framed as a generational investment opportunity. By localizing agricultural production, we mitigate national security risks while unlocking immense economic multipliers.
+                </p>
+<div class="mt-stack-lg grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-3xl mx-auto">
+<!-- Metric Card 1 -->
+<div class="bg-surface-container-low p-stack-md rounded border border-surface-variant flex flex-col items-center justify-center text-center shadow-sm">
+<span class="font-headline-lg text-headline-lg text-secondary mb-2">34M+</span>
+<span class="font-label-bold text-label-bold text-primary uppercase tracking-wide">Hectares of Arable Land</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 text-sm">Underutilized potential awaiting institutional structuring.</p>
+</div>
+<!-- Metric Card 2 -->
+<div class="bg-surface-container-low p-stack-md rounded border border-surface-variant flex flex-col items-center justify-center text-center shadow-sm">
+<span class="font-headline-lg text-headline-lg text-secondary mb-2">400M</span>
+<span class="font-label-bold text-label-bold text-primary uppercase tracking-wide">Projected Population</span>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 text-sm">The demographic imperative driving future domestic demand.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Multiplier Effects Bento Grid (Deep Green) -->
+<section class="bg-primary py-stack-lg md:py-[100px] px-margin-mobile md:px-margin-desktop text-on-primary">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-stack-lg gap-6">
+<div class="max-w-xl">
+<h2 class="font-headline-md text-headline-md text-secondary mb-4">10+ Multiplier Effects</h2>
+<p class="font-body-lg text-body-lg text-surface-dim">
+                            Our localized production models trigger compounding economic benefits across the national value chain.
+                        </p>
+</div>
+<button class="flex items-center gap-2 bg-secondary text-white px-6 py-3 rounded font-label-bold text-label-bold hover:opacity-90 transition-opacity shadow-lg self-start md:self-end">
+<span class="material-symbols-outlined">bar_chart</span>
+                        View Sustainability Report
+                    </button>
+</div>
+<!-- Bento Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Feature 1 (Spans 2 cols on desktop) -->
+<div class="md:col-span-2 bg-primary-container p-stack-md rounded border border-on-primary-fixed-variant/30 flex flex-col justify-between group hover:border-secondary/50 transition-colors">
+<div class="mb-8">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">factory</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2">Rural Industrialisation</h3>
+<p class="font-body-md text-body-md text-surface-dim max-w-lg">
+                                Transforming agrarian communities into agro-processing hubs. We establish localized infrastructure that retains value at the source, reducing post-harvest losses and driving regional GDP growth.
+                            </p>
+</div>
+<div class="flex items-center justify-between border-t border-on-primary-fixed-variant/50 pt-4 mt-auto">
+<span class="font-label-bold text-label-bold text-secondary uppercase tracking-wider">Impact Vector 01</span>
+<span class="material-symbols-outlined text-surface-dim group-hover:text-secondary transition-colors">arrow_outward</span>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="bg-primary-container p-stack-md rounded border border-on-primary-fixed-variant/30 flex flex-col justify-between group hover:border-secondary/50 transition-colors">
+<div class="mb-8">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">currency_exchange</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2">FX Stabilisation</h3>
+<p class="font-body-md text-body-md text-surface-dim">
+                                Direct substitution of imported commodities with domestically produced equivalents, conserving vital foreign exchange reserves.
+                            </p>
+</div>
+<div class="mt-auto">
+<span class="font-headline-lg text-headline-lg text-secondary block mb-2">-$2B</span>
+<span class="font-label-sm text-label-sm text-surface-dim uppercase">Targeted Import Reduction</span>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="bg-primary-container p-stack-md rounded border border-on-primary-fixed-variant/30 flex flex-col justify-between group hover:border-secondary/50 transition-colors">
+<div class="mb-8">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">groups</span>
+<h3 class="font-headline-md text-headline-md text-white mb-2">Youth Employment</h3>
+<p class="font-body-md text-body-md text-surface-dim">
+                                Creating formalized, high-skill roles in modern agronomy, logistics, and agribusiness management.
+                            </p>
+</div>
+<div class="mt-auto">
+<span class="font-headline-lg text-headline-lg text-secondary block mb-2">50k+</span>
+<span class="font-label-sm text-label-sm text-surface-dim uppercase">Direct Jobs Projected</span>
+</div>
+</div>
+<!-- Image Placeholder (Spans 2 cols) -->
+<div class="md:col-span-2 relative min-h-[300px] rounded overflow-hidden border border-on-primary-fixed-variant/30">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A sweeping, cinematic aerial view of a massive, modern agricultural facility surrounded by vast, perfectly regimented fields of crops in varying shades of deep green. The scene is bathed in golden hour sunlight, casting long shadows and highlighting the geometric precision of the farm layout. The aesthetic is premium, emphasizing scale, technological advancement, and institutional stability against the raw natural landscape." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBWREz9DewjetTuroZ_YdGpvAhXvv9ZXTwlwmmOUXurbcX05b3Wy3_sYVEiotcv74mxLZjng79OrRE6DKDL1O05g81FitUiGeVuf4YSRT85e7CRl0LRuGHFRryUWvJYggNHu8fThLnHgwWxRxrjC-1TGudJ4W82y3_J1TTbNkJVaXHESOWrwE6ul1uD1B-1wFuvEmmnInD09yL1IIRcVTw4Lgc4KEqCatMJ466UsyO7SZyzvNM0GVD6XNBd1Gap3CFlcG3Upc2k7vE');"></div>
+<div class="absolute inset-0 bg-primary/60 mix-blend-multiply"></div>
+<div class="absolute bottom-0 left-0 p-stack-md w-full bg-gradient-to-t from-primary to-transparent">
+<h3 class="font-headline-md text-headline-md text-secondary">Scale &amp; Precision</h3>
+<p class="font-body-md text-body-md text-surface-dim mt-2">Institutional-grade execution across the agricultural belt.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Overhaul -->
+<footer class="w-full relative bottom-0 bg-primary text-white pt-4xl pb-xl">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-3xl">
+<div class="bg-white/5 border border-white/10 rounded-2xl p-xl flex flex-col md:flex-row items-center justify-between gap-xl backdrop-blur-md">
+<div>
+<h4 class="font-headline-md text-[24px] font-bold text-white mb-xs">Sovereign Insights</h4>
+<p class="text-white/70 font-body-md">Executive briefings on agro-industrial transformation.</p>
+</div>
+<form class="flex w-full md:w-auto max-w-md gap-sm">
+<input class="bg-white/10 text-white px-lg py-md rounded-lg border border-white/20 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary flex-grow font-body-md placeholder:text-white/40 min-w-[250px]" placeholder="Executive Email" required="" type="email">
+<button class="bg-secondary text-white font-label-md text-label-md px-xl py-md rounded-lg hover:opacity-90 transition-opacity font-bold shadow-lg" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-2xl items-start mb-3xl">
+<div class="col-span-1 lg:col-span-4 flex flex-col gap-xl">
+<div class="h-20 w-auto">
+<img alt="Zuma Agro Logo" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOtO7AioIirhwq-4ahvn0QtnqeJNqk7U0EBCs2XxAW1ND30LxJuz2MFMJjervSij9WiuF3f3nqK-NjoeYf929hxBKtpJrHJH_Nrjij8XKRbzXP89aRJkmwKULX2yfo9oHiMeF8-iOsoEIJgIEHPqKvJL_K-erk-95YsZgiVmqZJ5epvgyq4fGxsN9SBmsro3-0X3J2DhL_2pn3WcuahqE6HXb0TxsF4pjDFQWS2L_9JXlYXijNFZPV-v_AeWUvckeN40Kp2zQLPsw" style="filter: brightness(0) invert(1);">
+</div>
+<p class="font-body-md text-[16px] text-white/70 max-w-sm leading-relaxed">
+                A sovereign-scale integration architecture connecting production, processing, and distribution across Nigeria.
+            </p>
+</div>
+<div class="col-span-1 lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-xl w-full">
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Platform</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Framework</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Strategic Business Units</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Operations</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Technology Stack</a>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Institutional</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Governance Board</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">ESG Standards</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Risk Management</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Continuity Planning</a>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Access</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Investors &amp; DFIs</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Contact Enterprise</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Partnership</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Press &amp; Media</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Locations</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Abuja HQ</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Makurdi Hub</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Lagos Terminal</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-lg flex flex-col md:flex-row justify-between items-center gap-md"><p class="font-label-sm text-[14px] text-white/50">
+                © Zuma Agro-Allied | 2026. All rights reserved.
+            </p>
+<div class="flex gap-xl">
+<a class="font-label-sm text-[14px] text-white/50 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-[14px] text-white/50 hover:text-white transition-colors" href="#">Terms of Engagement</a>
+</div></div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+</body></html>

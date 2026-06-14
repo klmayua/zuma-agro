@@ -1,0 +1,455 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Investor Intelligence Room - Zuma Agro-Allied</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-lowest": "#ffffff",
+                "background": "#f8faf6",
+                "secondary-fixed-dim": "#e9c263",
+                "on-tertiary-container": "#ffaba3",
+                "surface-variant": "#e1e3df",
+                "on-primary-fixed-variant": "#00513c",
+                "on-secondary-container": "#785b00",
+                "on-primary-container": "#86cfb2",
+                "on-primary-fixed": "#002116",
+                "tertiary-fixed": "#ffdad6",
+                "on-tertiary-fixed": "#410003",
+                "surface-container-low": "#f2f4f0",
+                "primary-fixed": "#a7f2d3",
+                "primary": "#005a43",
+                "on-error-container": "#93000a",
+                "surface-container-highest": "#e1e3df",
+                "surface-tint": "#1d6a52",
+                "surface-bright": "#f8faf6",
+                "primary-fixed-dim": "#8cd5b8",
+                "on-surface": "#191c1a",
+                "secondary": "#a8862d",
+                "outline": "#6f7974",
+                "secondary-fixed": "#ffdf98",
+                "on-error": "#ffffff",
+                "on-primary": "#ffffff",
+                "outline-variant": "#bfc9c2",
+                "on-tertiary-fixed-variant": "#930010",
+                "on-surface-variant": "#3f4944",
+                "tertiary-container": "#a20012",
+                "on-secondary-fixed": "#251a00",
+                "on-background": "#191c1a",
+                "on-secondary-fixed-variant": "#5a4300",
+                "error-container": "#ffdad6",
+                "error": "#ba1a1a",
+                "tertiary": "#77000a",
+                "on-secondary": "#ffffff",
+                "inverse-on-surface": "#eff1ed",
+                "surface-container-high": "#e7e9e5",
+                "surface": "#f8faf6",
+                "primary-container": "#005a43",
+                "tertiary-fixed-dim": "#ffb3ac",
+                "surface-dim": "#d8dbd7",
+                "surface-container": "#eceeeb",
+                "secondary-container": "#fed574",
+                "on-tertiary": "#ffffff",
+                "inverse-primary": "#8cd5b8",
+                "inverse-surface": "#2e312f",
+                "premium-red": "#ba1a1a"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem",
+                "2xl": "1rem",
+                "3xl": "1.5rem"
+        },
+        "spacing": {
+                "container-max": "1280px",
+                "stack-lg": "48px",
+                "margin-desktop": "64px",
+                "stack-sm": "12px",
+                "stack-md": "24px",
+                "margin-mobile": "20px",
+                "base": "8px",
+                "gutter": "24px",
+                "xl": "32px",
+                "md": "16px",
+                "2xl": "48px",
+                "sm": "8px",
+                "xs": "4px",
+                "unit": "8px",
+                "lg": "24px",
+                "3xl": "64px",
+                "4xl": "96px"
+        },
+        "fontFamily": {
+                "headline-md": [
+                        "Libre Caslon Text"
+                ],
+                "label-sm": [
+                        "Manrope"
+                ],
+                "display-lg-mobile": [
+                        "Libre Caslon Text"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Libre Caslon Text"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "label-bold": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Libre Caslon Text"
+                ],
+                "executive-caps": [
+                        "Manrope"
+                ],
+                "headline-xl": [
+                        "Libre Caslon Text"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "headline-lg-mobile": [
+                        "Libre Caslon Text"
+                ]
+        },
+        "fontSize": {
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "display-lg-mobile": [
+                        "36px",
+                        {
+                                "lineHeight": "44px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-bold": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "executive-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}]
+        },
+        "boxShadow": {
+            "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+            "elevated": "0 10px 30px -5px rgba(0, 0, 0, 0.08)",
+            "institutional": "0 20px 40px -10px rgba(0, 0, 0, 0.1)"
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        .fill-icon {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-white border-b border-outline-variant/20 z-50 transition-colors duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-5 md:py-6 w-full max-w-container-max mx-auto">
+<div class="flex items-center">
+<img alt="Zuma Agro Logo" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARTQl5245Oh9koSqCGm3zKlq5QYyK4hj1iu4ha4dzHclZHQIYc9knnHDvE7Xr4WcoiTaQnVb-lM5-YNVRzSHoxWphiQpIJkUldIu9Qo5Nqc0HwquKnAJwZbLX1dZZdWwXpS3HgsWknJSQoeCM3EUue3MdzO2PDTfX_WJQpNaVdMgSlDdjhOKLs5w7d5sCYK0zx6ACJWNst4gZySNXqPE0JlWjwtOXH2tKuRMgFe8dtnQNOAl_aSpguHzdqb_2IZMHXrYHYTvMbyic">
+</div>
+<nav class="hidden md:flex space-x-gutter"><a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">About</a>
+
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Framework</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Governance</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Impact</a>
+<a class="font-executive-caps text-executive-caps text-secondary border-b border-secondary pb-2 cursor-pointer transition-all active:opacity-80" href="#">Investors</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Partnership</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Platform</a></nav>
+<button class="hidden md:inline-flex bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] items-center justify-center rounded hover:opacity-90 transition-colors shadow-lg flex gap-xs">
+<span class="material-symbols-outlined text-[20px]" data-icon="admin_panel_settings">admin_panel_settings</span>
+            Executive Access
+        </button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-stack-lg flex flex-col gap-stack-lg">
+<!-- Header Section -->
+<section class="flex flex-col gap-stack-md border-b border-surface-variant pb-stack-md mt-lg">
+<div class="flex items-center gap-base text-primary">
+<span class="material-symbols-outlined fill-icon text-secondary">shield_lock</span>
+<span class="font-label-bold text-label-bold tracking-widest uppercase text-outline">Section 5.2 | High-Security Protocol Active</span>
+</div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-primary">Financial &amp; Investment Positioning</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+                Confidential intelligence briefing detailing the structured capital stack, sovereign alignments, and pilot capital allocation for Zuma Agro-Allied operations. Designed for institutional diligence.
+            </p>
+</section>
+<!-- Bento Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-xl">
+<!-- Capital Stack Chart (Left 8 cols) -->
+<div class="md:col-span-8 bg-surface-container-low border border-surface-variant rounded-xl p-stack-md flex flex-col gap-stack-md relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-stack-sm text-outline opacity-50 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined">pie_chart</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary">Capital Stack Architecture</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Strategic blending of financial instruments designed to minimize risk while maintaining robust equity upside for anchor participants.</p>
+<div class="flex-grow flex flex-col justify-center gap-stack-md py-stack-md">
+<!-- Progress Bar style visualization -->
+<div class="w-full h-12 flex rounded overflow-hidden shadow-sm">
+<div class="bg-primary h-full flex items-center justify-center text-on-primary font-label-bold text-label-bold" style="width: 50%;">
+                            50% Senior Debt
+                        </div>
+<div class="bg-primary-container h-full flex items-center justify-center text-on-primary font-label-bold text-label-bold" style="width: 20%;">
+                            20% Mezzanine
+                        </div>
+<div class="bg-secondary h-full flex items-center justify-center text-white font-label-bold text-label-bold" style="width: 30%;">
+                            30% Equity
+                        </div>
+</div>
+<div class="grid grid-cols-3 gap-base mt-stack-sm">
+<div class="flex flex-col border-l-2 border-primary pl-base">
+<span class="font-headline-lg text-headline-lg text-primary">50%</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Senior Debt</span>
+</div>
+<div class="flex flex-col border-l-2 border-primary-container pl-base">
+<span class="font-headline-lg text-headline-lg text-primary-container">20%</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Mezzanine</span>
+</div>
+<div class="flex flex-col border-l-2 border-secondary pl-base">
+<span class="font-headline-lg text-headline-lg text-secondary">30%</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Equity</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Alignment Panel (Right 4 cols) -->
+<div class="md:col-span-4 flex flex-col gap-gutter">
+<div class="bg-primary text-on-primary border border-primary-fixed-variant/30 rounded-xl p-stack-md flex flex-col gap-base relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 opacity-10">
+<span class="material-symbols-outlined text-[120px] fill-icon">account_balance</span>
+</div>
+<div class="flex items-center gap-base text-secondary mb-base">
+<span class="material-symbols-outlined">verified</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Sovereign Guarantee</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-secondary">DFI Alignment</h3>
+<p class="font-body-sm text-body-md text-on-primary/80 z-10">
+                        Our capital structure operates in synchronized alignment with major Development Finance Institutions, securing first-loss protections and subsidized risk margins.
+                    </p>
+</div>
+<!-- CTA Box -->
+<div class="bg-surface-container-low border border-surface-variant rounded-xl p-stack-md flex flex-col justify-between items-start gap-stack-md">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-base">Direct Dialogue</h3>
+<p class="font-body-sm text-body-md text-on-surface-variant">Request detailed term sheets and initiate diligence room access.</p>
+</div>
+<button class="bg-secondary text-white px-stack-md py-stack-sm rounded font-label-bold text-label-bold flex items-center justify-start gap-stack-sm w-full hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">mail</span>
+                        Request Executive Briefing
+                    </button>
+</div>
+</div>
+<!-- Pilot Capital Table (Full Width) -->
+<div class="md:col-span-12 bg-surface-container-lowest border border-surface-variant rounded-xl p-stack-md flex flex-col gap-stack-md overflow-hidden mt-stack-md shadow-sm">
+<div class="flex justify-between items-end border-b border-surface-variant pb-stack-sm">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary">Use of Funds</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">$25M Initial Pilot Capital Allocation</p>
+</div>
+<div class="text-right">
+<span class="font-label-bold text-label-bold text-outline">STATUS:</span>
+<span class="font-label-bold text-label-bold text-secondary ml-2">VERIFIED</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="border-b border-surface-variant">
+<th class="py-stack-sm px-base font-label-bold text-label-bold text-outline uppercase tracking-wider">Tranche</th>
+<th class="py-stack-sm px-base font-label-bold text-label-bold text-outline uppercase tracking-wider">Allocation Category</th>
+<th class="py-stack-sm px-base font-label-bold text-label-bold text-outline uppercase tracking-wider">Amount (USD)</th>
+<th class="py-stack-sm px-base font-label-bold text-label-bold text-outline uppercase tracking-wider">% of Total</th>
+</tr>
+</thead>
+<tbody class="font-body-md text-body-md">
+<tr class="border-b border-surface-variant/50 hover:bg-surface-container-low transition-colors">
+<td class="py-stack-sm px-base font-label-bold text-label-bold text-secondary">T-01</td>
+<td class="py-stack-sm px-base text-primary">Land Acquisition &amp; Prep</td>
+<td class="py-stack-sm px-base text-on-surface">$8,500,000</td>
+<td class="py-stack-sm px-base text-on-surface-variant">34%</td>
+</tr>
+<tr class="border-b border-surface-variant/50 hover:bg-surface-container-low transition-colors">
+<td class="py-stack-sm px-base font-label-bold text-label-bold text-secondary">T-02</td>
+<td class="py-stack-sm px-base text-primary">Infrastructure &amp; Tech</td>
+<td class="py-stack-sm px-base text-on-surface">$6,000,000</td>
+<td class="py-stack-sm px-base text-on-surface-variant">24%</td>
+</tr>
+<tr class="border-b border-surface-variant/50 hover:bg-surface-container-low transition-colors">
+<td class="py-stack-sm px-base font-label-bold text-label-bold text-secondary">T-03</td>
+<td class="py-stack-sm px-base text-primary">Seed &amp; Initial Inputs</td>
+<td class="py-stack-sm px-base text-on-surface">$4,500,000</td>
+<td class="py-stack-sm px-base text-on-surface-variant">18%</td>
+</tr>
+<tr class="border-b border-surface-variant/50 hover:bg-surface-container-low transition-colors">
+<td class="py-stack-sm px-base font-label-bold text-label-bold text-secondary">T-04</td>
+<td class="py-stack-sm px-base text-primary">Working Capital Reserve</td>
+<td class="py-stack-sm px-base text-on-surface">$3,500,000</td>
+<td class="py-stack-sm px-base text-on-surface-variant">14%</td>
+</tr>
+<tr class="border-b border-surface-variant/50 hover:bg-surface-container-low transition-colors">
+<td class="py-stack-sm px-base font-label-bold text-label-bold text-secondary">T-05</td>
+<td class="py-stack-sm px-base text-primary">Contingency</td>
+<td class="py-stack-sm px-base text-on-surface">$2,500,000</td>
+<td class="py-stack-sm px-base text-on-surface-variant">10%</td>
+</tr>
+</tbody>
+<tfoot>
+<tr class="bg-surface-container-low">
+<td class="py-stack-sm px-base font-headline-md text-headline-md text-primary text-right" colspan="2">TOTAL PROJECTED:</td>
+<td class="py-stack-sm px-base font-headline-md text-headline-md text-secondary border-t-2 border-secondary">$25,000,000</td>
+<td class="py-stack-sm px-base font-headline-md text-headline-md text-primary border-t-2 border-secondary">100%</td>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full relative bottom-0 bg-primary text-white pt-4xl pb-xl">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-3xl">
+<div class="bg-white/5 border border-white/10 rounded-2xl p-xl flex flex-col md:flex-row items-center justify-between gap-xl backdrop-blur-md">
+<div>
+<h4 class="font-headline-md text-[24px] font-bold text-white mb-xs">Sovereign Insights</h4>
+<p class="text-white/70 font-body-md">Executive briefings on agro-industrial transformation.</p>
+</div>
+<form class="flex w-full md:w-auto max-w-md gap-sm">
+<input class="bg-white/10 text-white px-lg py-md rounded-lg border border-white/20 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary flex-grow font-body-md placeholder:text-white/40 min-w-[250px]" placeholder="Executive Email" required="" type="email">
+<button class="bg-secondary text-white font-label-md text-label-md px-xl py-md rounded-lg hover:opacity-90 transition-opacity font-bold shadow-lg" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-2xl items-start mb-3xl">
+<div class="col-span-1 lg:col-span-4 flex flex-col gap-xl">
+<div class="h-20 w-auto">
+<img alt="Zuma Agro Logo" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkWrqabUDfqCUSP-aezwXjHuz2bKMBWiWkKensL3Sn7rj1ltcBSJfN_hmyLzYiXgmFp9nVEnAdogZMQUmXIhdZhv6nUhAkcqfM3_3LJCO_V6VqUithm1Q6uauPpZtzEP3NHKN2Czx_BcEyj5SXV8WC2X07UiZAuKbgjUpsEZm1INP7-GLkd73ywzPwplZRDFZdQELeyrw3uLbqQvStojXfnwKTuiwyGsxINcJ_kZr-79ibircVWoKtfA5lgpMGW9A4IG3xEMbzt0U" style="filter: brightness(0) invert(1);">
+</div>
+<p class="font-body-md text-[16px] text-white/70 max-w-sm leading-relaxed">
+                A sovereign-scale integration architecture connecting production, processing, and distribution across Nigeria.
+            </p>
+</div>
+<div class="col-span-1 lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-xl w-full">
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Platform</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Framework</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Strategic Business Units</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Operations</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Technology Stack</a>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Institutional</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Governance Board</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">ESG Standards</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Risk Management</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Continuity Planning</a>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Access</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Investors &amp; DFIs</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Contact Enterprise</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Partnership</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Press &amp; Media</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Locations</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Abuja HQ</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Makurdi Hub</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Lagos Terminal</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-lg flex flex-col md:flex-row justify-between items-center gap-md">
+<p class="font-label-sm text-[14px] text-white/50">
+                © Zuma Agro-Allied | 2026. All rights reserved.
+            </p>
+<div class="flex gap-xl">
+<a class="font-label-sm text-[14px] text-white/50 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-[14px] text-white/50 hover:text-white transition-colors" href="#">Terms of Engagement</a>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+</body></html>

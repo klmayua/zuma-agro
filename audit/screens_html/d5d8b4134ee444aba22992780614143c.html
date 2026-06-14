@@ -1,0 +1,331 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Governance &amp; Controls - Zuma Agro-Allied</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "surface-container-lowest": "#ffffff",
+                "background": "#f8faf6",
+                "secondary-fixed-dim": "#e9c263",
+                "on-tertiary-container": "#ffaba3",
+                "surface-variant": "#e1e3df",
+                "on-primary-fixed-variant": "#00513c",
+                "on-secondary-container": "#785b00",
+                "on-primary-container": "#86cfb2",
+                "on-primary-fixed": "#002116",
+                "tertiary-fixed": "#ffdad6",
+                "on-tertiary-fixed": "#410003",
+                "surface-container-low": "#f2f4f0",
+                "primary-fixed": "#a7f2d3",
+                "primary": "#005a43",
+                "on-error-container": "#93000a",
+                "surface-container-highest": "#e1e3df",
+                "surface-tint": "#1d6a52",
+                "surface-bright": "#f8faf6",
+                "primary-fixed-dim": "#8cd5b8",
+                "on-surface": "#191c1a",
+                "secondary": "#a8862d",
+                "outline": "#6f7974",
+                "secondary-fixed": "#ffdf98",
+                "on-error": "#ffffff",
+                "on-primary": "#ffffff",
+                "outline-variant": "#bfc9c2",
+                "on-tertiary-fixed-variant": "#930010",
+                "on-surface-variant": "#3f4944",
+                "tertiary-container": "#a20012",
+                "on-secondary-fixed": "#251a00",
+                "on-background": "#191c1a",
+                "on-secondary-fixed-variant": "#5a4300",
+                "error-container": "#ffdad6",
+                "error": "#ba1a1a",
+                "tertiary": "#77000a",
+                "on-secondary": "#ffffff",
+                "inverse-on-surface": "#eff1ed",
+                "surface-container-high": "#e7e9e5",
+                "surface": "#f8faf6",
+                "primary-container": "#005a43",
+                "tertiary-fixed-dim": "#ffb3ac",
+                "surface-dim": "#d8dbd7",
+                "surface-container": "#eceeeb",
+                "secondary-container": "#fed574",
+                "on-tertiary": "#ffffff",
+                "inverse-primary": "#8cd5b8",
+                "inverse-surface": "#2e312f",
+                "premium-red": "#ba1a1a"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem",
+                "2xl": "1rem",
+                "3xl": "1.5rem"
+        },
+        "spacing": {
+                "container-max": "1280px",
+                "stack-lg": "48px",
+                "margin-desktop": "64px",
+                "stack-sm": "12px",
+                "stack-md": "24px",
+                "margin-mobile": "20px",
+                "base": "8px",
+                "gutter": "24px",
+                "xl": "32px",
+                "md": "16px",
+                "2xl": "48px",
+                "sm": "8px",
+                "xs": "4px",
+                "unit": "8px",
+                "lg": "24px",
+                "3xl": "64px",
+                "4xl": "96px"
+        },
+        "fontFamily": {
+                "headline-md": [
+                        "Libre Caslon Text"
+                ],
+                "label-sm": [
+                        "Manrope"
+                ],
+                "display-lg-mobile": [
+                        "Libre Caslon Text"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Libre Caslon Text"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "label-bold": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Libre Caslon Text"
+                ],
+                "executive-caps": [
+                        "Manrope"
+                ],
+                "headline-xl": [
+                        "Libre Caslon Text"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "headline-lg-mobile": [
+                        "Libre Caslon Text"
+                ]
+        },
+        "fontSize": {
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "display-lg-mobile": [
+                        "36px",
+                        {
+                                "lineHeight": "44px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-bold": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "executive-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}]
+        },
+        "boxShadow": {
+            "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+            "elevated": "0 10px 30px -5px rgba(0, 0, 0, 0.08)",
+            "institutional": "0 20px 40px -10px rgba(0, 0, 0, 0.1)"
+        }
+},
+    },
+  }
+</script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        .texture-bg {
+            background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%23e1e3df" fill-opacity="0.2" fill-rule="evenodd"%3E%3Ccircle cx="3" cy="3" r="3"/%3E%3Ccircle cx="13" cy="13" r="3"/%3E%3C/g%3E%3C/svg%3E');
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky bg-white border-b border-outline-variant/20 z-50 transition-colors duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-5 md:py-6 w-full max-w-container-max mx-auto">
+<div class="flex items-center">
+<img alt="Zuma Agro Logo" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARTQl5245Oh9koSqCGm3zKlq5QYyK4hj1iu4ha4dzHclZHQIYc9knnHDvE7Xr4WcoiTaQnVb-lM5-YNVRzSHoxWphiQpIJkUldIu9Qo5Nqc0HwquKnAJwZbLX1dZZdWwXpS3HgsWknJSQoeCM3EUue3MdzO2PDTfX_WJQpNaVdMgSlDdjhOKLs5w7d5sCYK0zx6ACJWNst4gZySNXqPE0JlWjwtOXH2tKuRMgFe8dtnQNOAl_aSpguHzdqb_2IZMHXrYHYTvMbyic">
+</div>
+<nav class="hidden md:flex space-x-gutter"><a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">About</a>
+
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Framework</a>
+<a class="font-executive-caps text-executive-caps text-secondary border-b border-secondary pb-2 cursor-pointer transition-all active:opacity-80" href="#">Governance</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Impact</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Investors</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Partnership</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Platform</a></nav>
+<button class="hidden md:inline-flex bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] items-center justify-center rounded hover:opacity-90 transition-colors shadow-lg flex gap-xs">
+<span class="material-symbols-outlined text-[20px]" data-icon="admin_panel_settings">admin_panel_settings</span>
+            Executive Access
+        </button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-xl pb-stack-lg px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<!-- Hero Section -->
+<section class="mb-stack-lg border-b border-surface-variant pb-stack-md flex flex-col md:flex-row items-start justify-between gap-stack-md">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg text-primary mb-stack-sm">Governance &amp; Controls</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-stack-md">
+                    Establishing enduring stability through stringent oversight, separation of powers, and an unwavering commitment to consequence enforcement within the institutional control doctrine.
+                </p>
+<button class="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded flex items-center justify-center gap-xs hover:opacity-90 transition-opacity shadow-lg">
+<span class="material-symbols-outlined text-[20px]" data-icon="shield">shield</span>
+                    Examine Oversight Protocols
+                </button>
+</div>
+<div class="w-full md:w-1/3 aspect-[4/3] bg-surface-container rounded border border-outline-variant overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A formal corporate boardroom viewed from a high angle. The room features a massive polished dark wood table, surrounded by leather executive chairs. Natural light streams through large windows onto the table, creating a serious, institutional mood. The color palette emphasizes deep wood tones, pristine white walls, and touches of institutional green. The overall aesthetic conveys authority, permanence, and stringent oversight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO_XAtHzHeoJE-PZaoVQ09lNB9sihJlxUA7qZpW4zKHN0DWeWelv-8JeVbCC0w1WdHu4wjpUQxn_k7AMA8cvocReLTUFELJdz8a4ARx9t8BGM1PDyhQJUIMYJOHK4WtkdeM7MmqI4bSCaneEi-Dam2gZ3RQACOjJQKzjHRWQfhWs2DNL7ZvgqnH8-B8AO6I0PRvVMUHco2FTUQXU46utRBbVsoGgQH2HZNdD0O7SSOcz66wkAE74kspc_ZPBcJcrC4waFXCUHqStU">
+</div>
+</section>
+<!-- Bento Grid: Controls Framework -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-stack-lg">
+<!-- Board Structures (Spans 8 columns) -->
+<div class="md:col-span-8 bg-surface-container-low rounded border border-outline-variant p-stack-md texture-bg shadow-soft">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-md flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="account_balance">account_balance</span>
+                    Board Structures
+                </h2>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-stack-sm">
+<div class="bg-surface rounded border border-surface-variant p-stack-sm shadow-soft">
+<div class="font-label-bold text-label-bold text-secondary mb-2">Audit Committee</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Rigorous financial verification and external compliance alignment.</p>
+</div>
+<div class="bg-surface rounded border border-surface-variant p-stack-sm shadow-soft">
+<div class="font-label-bold text-label-bold text-secondary mb-2">Finance Committee</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Capital allocation strategy and systemic risk mitigation.</p>
+</div>
+<div class="bg-surface rounded border border-surface-variant p-stack-sm shadow-soft">
+<div class="font-label-bold text-label-bold text-secondary mb-2">Governance Committee</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Mandate enforcement and executive performance review.</p>
+</div>
+</div>
+</div>
+<!-- Institutional Control Doctrine (Spans 4 columns) -->
+<div class="md:col-span-4 bg-primary text-white rounded p-stack-md flex flex-col justify-center relative overflow-hidden shadow-soft">
+<div class="absolute inset-0 opacity-10 mix-blend-overlay" style="background-image: radial-gradient(circle at 100% 0%, #a7f2d3 0%, transparent 70%);"></div>
+<div class="font-label-bold text-label-bold text-secondary mb-2">Section 2.1</div>
+<h3 class="font-headline-md text-headline-md mb-stack-sm text-white">Institutional Control Doctrine</h3>
+<p class="font-body-md text-body-md text-white/80">
+                    A zero-tolerance framework designed to isolate risk and mandate compliance across all operational tiers.
+                </p>
+</div>
+<!-- Separation of Powers Diagram (Spans 6 columns) -->
+<div class="md:col-span-6 bg-surface-container-low rounded border border-outline-variant p-stack-md shadow-soft">
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Separation of Powers</h3>
+<div class="aspect-video bg-surface rounded border border-surface-variant flex items-center justify-center relative p-4">
+<!-- Abstract representation of separation -->
+<div class="flex w-full justify-between items-center px-4">
+<div class="w-24 h-24 rounded-full border-2 border-primary flex items-center justify-center font-label-bold text-label-bold text-primary bg-surface-container-low z-10">Exec</div>
+<div class="flex-grow h-px bg-outline-variant mx-2 border-dashed border-t-2"></div>
+<div class="w-32 h-32 rounded-full border-2 border-secondary flex items-center justify-center font-label-bold text-label-bold text-secondary bg-surface-container-low z-10">Board</div>
+<div class="flex-grow h-px bg-outline-variant mx-2 border-dashed border-t-2"></div>
+<div class="w-24 h-24 rounded-full border-2 border-error flex items-center justify-center font-label-bold text-label-bold text-error bg-surface-container-low z-10">Audit</div>
+</div>
+</div>
+</div>
+<!-- Internal Controls / Consequence (Spans 6 columns) -->
+<div class="md:col-span-6 bg-surface-container-low rounded border border-outline-variant p-stack-md flex flex-col justify-between shadow-soft">
+<div>
+<h3 class="font-headline-md text-headline-md text-primary mb-stack-sm">Consequence Enforcement &amp; Crisis Management</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-sm">
+                        Pre-defined escalation matrices ensure immediate, proportionate responses to policy deviations or market shocks.
+                    </p>
+</div>
+<div class="space-y-2 mt-4">
+<div class="flex items-center gap-3 p-3 bg-surface border border-surface-variant rounded shadow-soft">
+<span class="material-symbols-outlined text-error icon-fill" data-icon="gavel">gavel</span>
+<span class="font-label-bold text-label-bold text-on-surface">Immediate Disciplinary Matrix</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface border border-surface-variant rounded shadow-soft">
+<span class="material-symbols-outlined text-secondary icon-fill" data-icon="warning">warning</span>
+<span class="font-label-bold text-label-bold text-on-surface">Automated Risk Containment Protocols</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Overhaul -->
+<footer class="w-full relative bottom-0 bg-primary text-white pt-4xl pb-xl"><div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-3xl"><div class="bg-white/5 border border-white/10 rounded-2xl p-xl flex flex-col md:flex-row items-center justify-between gap-xl backdrop-blur-md"><div><h4 class="font-headline-md text-[24px] font-bold text-white mb-xs">Sovereign Insights</h4><p class="text-white/70 font-body-md">Executive briefings on agro-industrial transformation.</p></div><form class="flex w-full md:w-auto max-w-md gap-sm"><input class="bg-white/10 text-white px-lg py-md rounded-lg border border-white/20 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary flex-grow font-body-md placeholder:text-white/40 min-w-[250px]" placeholder="Executive Email" required="" type="email"><button class="bg-secondary text-white font-label-md text-label-md px-xl py-md rounded-lg hover:opacity-90 transition-opacity font-bold shadow-lg" type="submit">Subscribe</button></form></div></div><div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-2xl items-start mb-3xl"><div class="col-span-1 lg:col-span-4 flex flex-col gap-xl"><div class="h-20 w-auto">https://lh3.googleusercontent.com/aida-public/AB6AXuACTcUMOJRn0ysfgdNWL4j5W6m2s7-ZL1P4EdnFYnMYawR0PrXl8etkDYTjXkXfhWpPeoejr9tauQIu75FgW5q4xD3Ro5MYj5Xt_bLY2aA25LNwE8dzsg_LRthq2dqPUXDlqVoJXFUNJu2pJjMnnNBufCHwsc7uevuEIabUFsNwyEwBxTc3JQsYy6Kq8hsDrpXn5gVurFg9nCDeowj1qL-1H3C8jiyePmJdc-sE31GhFbF7ulvvv-tNLUgaov4eXUJKhEo-mEznQMo</div><p class="font-body-md text-[16px] text-white/70 max-w-sm leading-relaxed">A sovereign-scale integration architecture connecting production, processing, and distribution across Nigeria.</p></div><div class="col-span-1 lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-xl w-full"><div class="flex flex-col gap-md"><h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Platform</h4><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Framework</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Strategic Business Units</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Operations</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Technology Stack</a></div><div class="flex flex-col gap-md"><h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Institutional</h4><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Governance Board</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">ESG Standards</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Risk Management</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Continuity Planning</a></div><div class="flex flex-col gap-md"><h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Access</h4><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Investors &amp; DFIs</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Contact Enterprise</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Partnership</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Press &amp; Media</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Careers</a></div><div class="flex flex-col gap-md"><h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Locations</h4><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Abuja HQ</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Makurdi Hub</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Lagos Terminal</a></div></div></div><div class="border-t border-white/10"><div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-lg flex flex-col md:flex-row justify-between items-center gap-md"><p class="font-label-sm text-[14px] text-white/50">© Zuma Agro-Allied | 2026. All rights reserved.</p><div class="flex gap-xl"><a class="font-label-sm text-[14px] text-white/50 hover:text-white transition-colors" href="#">Privacy Policy</a><a class="font-label-sm text-[14px] text-white/50 hover:text-white transition-colors" href="#">Terms of Engagement</a></div></div></div></footer>
+
+
+
+
+
+
+
+
+</body></html>

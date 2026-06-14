@@ -1,0 +1,496 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Institutional Classification - Zuma Agro-Allied</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-secondary-fixed": "#251a00",
+                "surface-tint": "#1d6a52",
+                "surface-dim": "#d8dbd7",
+                "secondary-fixed-dim": "#e9c263",
+                "surface-container-low": "#f2f4f0",
+                "on-tertiary-fixed-variant": "#930010",
+                "on-secondary": "#ffffff",
+                "on-background": "#191c1a",
+                "tertiary-fixed-dim": "#ffb3ac",
+                "surface-container": "#eceeeb",
+                "error": "#ba1a1a",
+                "inverse-primary": "#8cd5b8",
+                "surface-container-high": "#e7e9e5",
+                "background": "#f8faf6",
+                "surface-container-highest": "#e1e3df",
+                "inverse-surface": "#2e312f",
+                "on-tertiary": "#ffffff",
+                "on-primary": "#ffffff",
+                "primary-container": "#005a43",
+                "on-surface": "#191c1a",
+                "surface-container-lowest": "#ffffff",
+                "on-surface-variant": "#3f4944",
+                "primary-fixed": "#a7f2d3",
+                "on-error-container": "#93000a",
+                "on-error": "#ffffff",
+                "on-secondary-container": "#785b00",
+                "outline": "#6f7974",
+                "on-tertiary-fixed": "#410003",
+                "error-container": "#ffdad6",
+                "primary-fixed-dim": "#8cd5b8",
+                "on-tertiary-container": "#ffaba3",
+                "on-primary-fixed": "#002116",
+                "tertiary": "#77000a",
+                "secondary-container": "#fed574",
+                "surface-bright": "#f8faf6",
+                "on-primary-fixed-variant": "#00513c",
+                "tertiary-fixed": "#ffdad6",
+                "outline-variant": "#bfc9c2",
+                "surface-variant": "#e1e3df",
+                "primary": "#005a43",
+                "on-primary-container": "#86cfb2",
+                "tertiary-container": "#a20012",
+                "inverse-on-surface": "#eff1ed",
+                "surface": "#f8faf6",
+                "secondary": "#a8862d",
+                "secondary-fixed": "#ffdf98",
+                "on-secondary-fixed-variant": "#5a4300"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.125rem",
+                "lg": "0.25rem",
+                "xl": "0.5rem",
+                "full": "0.75rem",
+                "2xl": "1rem",
+                "3xl": "1.5rem"
+        },
+        "spacing": {
+                "container-max": "1280px",
+                "stack-lg": "48px",
+                "margin-desktop": "64px",
+                "stack-sm": "12px",
+                "stack-md": "24px",
+                "margin-mobile": "20px",
+                "base": "8px",
+                "gutter": "24px",
+                "xl": "32px",
+                "md": "16px",
+                "2xl": "48px",
+                "sm": "8px",
+                "xs": "4px",
+                "unit": "8px",
+                "lg": "24px",
+                "3xl": "64px",
+                "4xl": "96px"
+        },
+        "fontFamily": {
+                "headline-md": [
+                        "Libre Caslon Text"
+                ],
+                "label-sm": [
+                        "Manrope"
+                ],
+                "display-lg-mobile": [
+                        "Libre Caslon Text"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "display-lg": [
+                        "Libre Caslon Text"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "label-bold": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Libre Caslon Text"
+                ],
+                "executive-caps": [
+                        "Manrope"
+                ],
+                "headline-xl": [
+                        "Libre Caslon Text"
+                ],
+                "label-md": [
+                        "Manrope"
+                ],
+                "headline-lg-mobile": [
+                        "Libre Caslon Text"
+                ],
+                "sans-inter": [
+                        "Inter", "sans-serif"
+                ]
+        },
+        "fontSize": {
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "label-sm": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "display-lg-mobile": [
+                        "36px",
+                        {
+                                "lineHeight": "44px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-bold": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "executive-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "700"}]
+        },
+        "boxShadow": {
+            "soft": "0 4px 20px -2px rgba(0, 0, 0, 0.05)",
+            "elevated": "0 10px 30px -5px rgba(0, 0, 0, 0.08)",
+            "institutional": "0 20px 40px -10px rgba(0, 0, 0, 0.1)"
+        }
+},
+    },
+  }
+</script>
+<style class="">        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        
+        .form-input-premium {
+            width: 100%;
+            background-color: theme('colors.surface-container-low');
+            border: 1px solid theme('colors.outline-variant');
+            border-radius: theme('borderRadius.lg');
+            padding: theme('spacing.md') theme('spacing.lg');
+            font-family: theme('fontFamily.sans-inter');
+            font-size: 16px;
+            color: theme('colors.on-surface');
+            transition: all 0.3s ease;
+        }
+        .form-input-premium:focus {
+            outline: none;
+            border-color: theme('colors.secondary');
+            background-color: theme('colors.surface-container');
+            box-shadow: 0 0 0 1px theme('colors.secondary');
+        }
+        .form-input-premium::placeholder {
+            color: theme('colors.on-surface-variant');
+            opacity: 0.8;
+        }
+        
+        .form-select-premium {
+            width: 100%;
+            background-color: theme('colors.surface-container-low');
+            border: 1px solid theme('colors.outline-variant');
+            border-radius: theme('borderRadius.lg');
+            padding: theme('spacing.md') theme('spacing.lg');
+            font-family: theme('fontFamily.sans-inter');
+            font-size: 16px;
+            color: theme('colors.on-surface');
+            transition: all 0.3s ease;
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23a8862d' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 1rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            cursor: pointer;
+        }
+        .form-select-premium:focus {
+            outline: none;
+            border-color: theme('colors.secondary');
+            background-color: theme('colors.surface-container');
+            box-shadow: 0 0 0 1px theme('colors.secondary');
+        }
+
+        .premium-step-container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3rem;
+            padding: 0 1rem;
+        }
+        .premium-step-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 2rem;
+            right: 2rem;
+            height: 1px;
+            background-color: theme('colors.outline-variant');
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .premium-step {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: theme('colors.surface');
+            padding: 0 1rem;
+        }
+        .premium-step-number {
+            font-family: theme('fontFamily.headline-md');
+            font-size: 1.25rem;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+        .premium-step.active .premium-step-number {
+            color: theme('colors.secondary');
+        }
+        .premium-step.inactive .premium-step-number {
+            color: theme('colors.on-surface-variant');
+            opacity: 0.5;
+        }
+        .premium-step-label {
+            font-family: theme('fontFamily.sans-inter');
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+        }
+        .premium-step.active .premium-step-label {
+            color: theme('colors.on-surface');
+        }
+        .premium-step.inactive .premium-step-label {
+            color: theme('colors.on-surface-variant');
+            opacity: 0.5;
+        }</style>
+</head>
+<body class="bg-surface text-on-surface font-body-md antialiased min-h-screen flex flex-col pt-[97px]">
+<!-- TopNavBar -->
+<header class="w-full top-0 fixed bg-white border-b border-outline-variant/20 z-50 transition-colors duration-300">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-5 md:py-6 w-full max-w-container-max mx-auto">
+<div class="flex items-center">
+<img alt="Zuma Agro Logo" class="h-16 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWsy5WI56gb9C0-IZmPYGPv7VdFVR0LaYMkfQOAhfyu2umhF_FXDYvHn1BxD_UiXdtTKJEIBvY8WoDGPIymb8Sp8rW8UHL32QKovb1YN_5BgbUsRpi05-WUWZoG8MCr18BhFLoGd_KqSBqexY3BDoBR2BAhyIeaiSQ8EqesxH_VzUwzyoH9Ekchrhv20e37b9m8gCym5Oiju4N1gsN4RZ_fsBQMSABEPFOnhPJ-NQvwc8w4v_qgRN-09zLthl7MROtyuY9LaBDMq8">
+</div>
+<nav class="hidden md:flex space-x-gutter"><a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">About</a>
+
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Framework</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Governance</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Impact</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Investors</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Partnership</a>
+<a class="font-executive-caps text-executive-caps text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer transition-all active:opacity-80" href="#">Platform</a></nav>
+<button class="hidden md:inline-flex bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] items-center justify-center rounded hover:opacity-90 transition-colors shadow-lg flex gap-xs">
+<span class="material-symbols-outlined text-[20px]" data-icon="admin_panel_settings">lock</span>
+            Executive Access
+        </button>
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col items-center justify-start pt-16 pb-4xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="w-full max-w-4xl">
+<!-- Premium Progress Flow -->
+<div class="mb-3xl w-full max-w-2xl mx-auto">
+<div class="mb-3xl w-full max-w-2xl mx-auto">
+    <div class="flex items-center justify-between relative">
+        <div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-[1px] bg-outline-variant z-0"></div>
+        <!-- Step 01: Active -->
+        <div class="relative z-10 flex flex-col items-center gap-2 bg-surface px-2">
+            <div class="w-8 h-8 rounded-full bg-secondary text-white flex items-center justify-center font-label-bold text-label-bold border-2 border-surface shadow-sm">
+                01
+            </div>
+            <span class="font-label-sm text-label-sm text-on-surface font-bold">Entity</span>
+        </div>
+        <!-- Step 02: Inactive -->
+        <div class="relative z-10 flex flex-col items-center gap-2 bg-surface px-2">
+            <div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-bold text-label-bold border-2 border-surface">
+                02
+            </div>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">Compliance</span>
+        </div>
+        <!-- Step 03: Inactive -->
+        <div class="relative z-10 flex flex-col items-center gap-2 bg-surface px-2">
+            <div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-bold text-label-bold border-2 border-surface">
+                03
+            </div>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">Mandate</span>
+        </div>
+        <!-- Step 04: Inactive -->
+        <div class="relative z-10 flex flex-col items-center gap-2 bg-surface px-2">
+            <div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-label-bold text-label-bold border-2 border-surface">
+                04
+            </div>
+            <span class="font-label-sm text-label-sm text-on-surface-variant">Review</span>
+        </div>
+    </div>
+</div>
+<div class="text-center mt-2xl">
+<span class="font-sans-inter text-xs text-secondary uppercase tracking-[0.2em] block mb-4 font-semibold">Step 01 of 04</span>
+<h1 class="font-headline-xl text-[56px] leading-tight text-primary font-bold mb-6">Institutional Classification</h1>
+<p class="font-sans-inter text-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+    Establish your organizational identity to align with the Sovereign framework's production, processing, and distribution architecture.
+</p>
+</div>
+</div>
+<!-- Premium Form Area -->
+<div class="w-full max-w-2xl mx-auto mt-2xl">
+<form action="#" class="space-y-3xl" method="POST">
+<div class="space-y-2xl">
+<div>
+<label class="font-sans-inter text-xs uppercase tracking-widest block mb-2 font-medium text-on-surface" for="legalName" data-stitch-orig-opacity="0">Full Legal Name</label>
+<input class="form-input-premium h-[64px] px-xl rounded-xl bg-white" id="legalName" name="legalName" placeholder="e.g. Ministry of Agriculture and Rural Development" required="" type="text">
+</div>
+<div>
+<label class="font-sans-inter text-xs uppercase tracking-widest block mb-2 font-medium text-on-surface" for="jurisdiction" data-stitch-orig-opacity="0">Full Legal Name</label>
+<input class="form-input-premium h-[64px] px-xl rounded-xl bg-white" id="jurisdiction" name="jurisdiction" placeholder="e.g. Federal Republic of Nigeria" required="" type="text">
+</div>
+<div>
+<label class="font-sans-inter text-xs uppercase tracking-widest block mb-2 font-medium text-on-surface" for="entityType" data-stitch-orig-opacity="0">Full Legal Name</label>
+<select class="form-select-premium h-[64px] px-xl rounded-xl bg-white" id="entityType" name="entityType" required="">
+<option disabled="" selected="" value="">Select classification...</option>
+<option value="federal_ministry">Federal Ministry</option>
+<option value="state_government">State Government</option>
+<option value="dfi">Development Finance Institution (DFI)</option>
+<option value="institutional_investor">Institutional Investor</option>
+<option value="strategic_partner">Strategic Partner</option>
+</select>
+</div>
+</div>
+<div class="pt-xl flex justify-center mt-3xl">
+<button class="bg-primary text-white font-sans-inter text-sm tracking-wider uppercase h-[64px] px-[48px] hover:opacity-90 transition-all duration-300 flex items-center justify-center gap-4 shadow-elevated w-full md:w-auto rounded-xl" type="submit">
+                            Next Step
+                            <span class="material-symbols-outlined text-[24px] text-secondary" style="font-variation-settings: &quot;FILL&quot; 0;">arrow_forward</span>
+</button>
+</div>
+</form>
+<div class="mt-2xl text-center border-t border-outline-variant/30 pt-xl">
+<p class="font-sans-inter text-sm text-on-surface-variant flex items-center justify-center gap-3">
+<span class="material-symbols-outlined text-[18px] text-secondary">lock</span>
+                    Information provided is secured under institutional NDA protocols.
+                </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full relative bottom-0 bg-primary text-white pt-4xl pb-xl mt-auto">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-3xl">
+<div class="bg-white/5 border border-white/10 rounded-2xl p-xl flex flex-col md:flex-row items-center justify-between gap-xl backdrop-blur-md">
+<div>
+<h4 class="font-headline-md text-[24px] font-bold text-white mb-xs">Sovereign Insights</h4>
+<p class="text-white/70 font-body-md">Executive briefings on agro-industrial transformation.</p>
+</div>
+<form class="flex w-full md:w-auto max-w-md gap-sm">
+<input class="bg-white/10 text-white px-lg py-md rounded-lg border border-white/20 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary flex-grow font-body-md placeholder:text-white/40 min-w-[250px]" placeholder="Executive Email" required="" type="email">
+<button class="bg-secondary text-white font-label-md text-label-md px-xl py-md rounded-lg hover:opacity-90 transition-opacity font-bold shadow-lg rounded-xl" type="submit">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-2xl items-start mb-3xl">
+<div class="col-span-1 lg:col-span-4 flex flex-col gap-xl">
+<div class="h-20 w-auto">
+<img alt="Zuma Agro Logo" class="h-full w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWsy5WI56gb9C0-IZmPYGPv7VdFVR0LaYMkfQOAhfyu2umhF_FXDYvHn1BxD_UiXdtTKJEIBvY8WoDGPIymb8Sp8rW8UHL32QKovb1YN_5BgbUsRpi05-WUWZoG8MCr18BhFLoGd_KqSBqexY3BDoBR2BAhyIeaiSQ8EqesxH_VzUwzyoH9Ekchrhv20e37b9m8gCym5Oiju4N1gsN4RZ_fsBQMSABEPFOnhPJ-NQvwc8w4v_qgRN-09zLthl7MROtyuY9LaBDMq8" style="filter: brightness(0) invert(1);">
+</div>
+<p class="font-body-md text-[16px] text-white/70 max-w-sm leading-relaxed">
+                A sovereign-scale integration architecture connecting production, processing, and distribution across Nigeria.
+            </p>
+</div>
+<div class="col-span-1 lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-xl w-full">
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Platform</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Framework</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Strategic Business Units</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Operations</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Technology Stack</a>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Institutional</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Governance Board</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">ESG Standards</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Risk Management</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Continuity Planning</a>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Access</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Investors &amp; DFIs</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Contact Enterprise</a><a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Partnership</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Press &amp; Media</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Careers</a>
+</div>
+<div class="flex flex-col gap-md">
+<h4 class="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">Locations</h4>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Abuja HQ</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Makurdi Hub</a>
+<a class="font-body-md text-[16px] text-white/80 hover:text-white transition-colors" href="#">Lagos Terminal</a>
+</div>
+</div>
+</div>
+<div class="border-t border-white/10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-lg flex flex-col md:flex-row justify-between items-center gap-md"><p class="font-label-sm text-[14px] text-white/50">
+                (c) Zuma Agro-Allied | 2026. All rights reserved.
+            </p>
+<div class="flex gap-xl">
+<a class="font-label-sm text-[14px] text-white/50 hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-[14px] text-white/50 hover:text-white transition-colors" href="#">Terms of Engagement</a>
+</div></div>
+</div>
+</footer>
+
+
+
+
+
+
+</body></html>
