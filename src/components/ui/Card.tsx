@@ -7,8 +7,8 @@ type CardProps = {
 export function Card({ children, className = "", hover = true }: CardProps) {
   return (
     <div
-      className={`bg-surface-white border border-surface-stone rounded-lg p-8 ${
-        hover ? "hover:border-secondary transition-colors" : ""
+      className={`bg-surface-container-lowest border border-outline-variant/10 rounded-3xl p-8 ${
+        hover ? "shadow-institutional hover:shadow-elevated transition-shadow" : ""
       } ${className}`}
     >
       {children}
@@ -23,9 +23,9 @@ type MetricCardProps = {
 
 export function MetricCard({ value, label }: MetricCardProps) {
   return (
-    <div className="bg-surface-white border border-surface-stone rounded-lg p-6 text-center">
+    <div className="bg-surface-container-low border border-outline-variant rounded-xl p-6 text-center">
       <div className="text-3xl font-bold text-primary mb-2">{value}</div>
-      <div className="text-sm text-surface-slate">{label}</div>
+      <div className="text-sm text-on-surface-variant">{label}</div>
     </div>
   );
 }
@@ -33,13 +33,18 @@ export function MetricCard({ value, label }: MetricCardProps) {
 type SBUCardProps = {
   name: string;
   description: string;
+  icon: string;
 };
 
-export function SBUCard({ name, description }: SBUCardProps) {
+export function SBUCard({ name, description, icon }: SBUCardProps) {
   return (
-    <Card className="p-8">
-      <h3 className="text-lg font-semibold text-surface-charcoal mb-2">{name}</h3>
-      <p className="text-sm text-surface-slate">{description}</p>
+    <Card className="p-xl">
+      <div className="text-6xl font-light mb-4">{icon}</div>
+      <div className="text-[11px] font-bold tracking-[0.15em] uppercase text-secondary mb-2">
+        Strategic Business Unit
+      </div>
+      <h3 className="font-display text-xl font-semibold text-on-surface mb-2">{name}</h3>
+      <p className="text-body-md text-on-surface-variant">{description}</p>
     </Card>
   );
 }
@@ -52,14 +57,14 @@ type DoctrineCardProps = {
 
 export function DoctrineCard({ number, title, description }: DoctrineCardProps) {
   return (
-    <div className="flex gap-4 items-start">
-      <div className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center text-sm font-semibold">
-        {number}
+    <div className="bg-white/5 backdrop-blur-lg rounded-3xl p-2xl border border-white/10">
+      <div className="flex items-center gap-3 mb-4">
+        <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-sm font-bold text-white">
+          {number}
+        </div>
+        <h3 className="font-display text-lg font-semibold text-white">{title}</h3>
       </div>
-      <div>
-        <h3 className="text-lg font-semibold text-surface-charcoal mb-1">{title}</h3>
-        <p className="text-sm text-surface-slate">{description}</p>
-      </div>
+      <p className="text-body-md text-white/70">{description}</p>
     </div>
   );
 }

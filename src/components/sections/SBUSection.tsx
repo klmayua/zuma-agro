@@ -66,12 +66,12 @@ const sbuDetails = [
 
 export function SBUSection() {
   return (
-    <section className="py-16 md:py-24 bg-surface-ivory">
-      <div className="max-w-[1280px] mx-auto px-10 md:px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-surface-charcoal mb-4">
+    <section className="py-16 md:py-24 bg-surface">
+      <div className="max-w-[1280px] mx-auto px-16 md:px-8">
+        <h2 className="text-3xl md:text-4xl font-bold font-display text-on-surface mb-4">
           Strategic Business Units
         </h2>
-        <p className="text-lg text-surface-slate mb-12 max-w-2xl">
+        <p className="text-lg text-on-surface-variant mb-12 max-w-2xl">
           Six integrated business units operating in concert to deliver
           sovereign-scale agro-industrial transformation across the value
           chain.
@@ -80,20 +80,20 @@ export function SBUSection() {
           {sbuDetails.map((sbu, index) => (
             <div
               key={sbu.name}
-              className="bg-surface-white border border-surface-stone rounded-lg p-8 hover:border-secondary transition-colors"
+              className="bg-surface-container-lowest border border-outline-variant/10 rounded-3xl p-8 shadow-institutional hover:border-secondary transition-colors"
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-10 h-10 bg-primary/10 text-primary rounded-lg flex items-center justify-center">
                   {sbu.icon}
                 </div>
-                <span className="text-xs font-semibold text-surface-slate tracking-wider">
+                <span className="text-xs font-semibold text-on-surface-variant tracking-wider">
                   SBU {String(index + 1).padStart(2, "0")}
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-surface-charcoal mb-2">
+              <h3 className="text-lg font-semibold text-on-surface mb-2">
                 {sbu.name}
               </h3>
-              <p className="text-sm text-surface-slate">{sbu.description}</p>
+              <p className="text-sm text-on-surface-variant">{sbu.description}</p>
             </div>
           ))}
         </div>

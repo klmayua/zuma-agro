@@ -18,14 +18,14 @@ export function Button({
   onClick,
 }: ButtonProps) {
   const baseStyles =
-    "inline-flex items-center justify-center gap-2 font-semibold transition-all";
+    "inline-flex items-center justify-center gap-2 font-bold transition-all";
 
   const variants = {
     primary:
-      "bg-error text-white px-6 py-3 rounded-lg hover:outline hover:outline-2 hover:outline-secondary hover:outline-offset-2",
+      "bg-secondary text-white h-[56px] px-[40px] rounded hover:opacity-90",
     secondary:
-      "border border-secondary text-surface-charcoal px-6 py-3 rounded-lg hover:bg-secondary hover:text-white",
-    tertiary: "text-primary hover:underline",
+      "bg-transparent border-2 border-white/30 text-white h-[56px] px-[40px] rounded hover:bg-white/10",
+    tertiary: "text-secondary hover:underline",
   };
 
   const combinedStyles = `${baseStyles} ${variants[variant]} ${className}`;

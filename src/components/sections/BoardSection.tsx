@@ -34,14 +34,14 @@ const boardMembers = [
 export function BoardSection() {
   return (
     <section className="py-16 md:py-24">
-      <div className="max-w-[1280px] mx-auto px-10 md:px-6">
+      <div className="max-w-[1280px] mx-auto px-16 md:px-8">
         <Badge variant="outline" className="mb-4">
           Governance
         </Badge>
-        <h2 className="text-3xl md:text-4xl font-bold text-surface-charcoal mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold font-display text-on-surface mb-4">
           Board of Directors
         </h2>
-        <p className="text-lg text-surface-slate mb-12 max-w-2xl">
+        <p className="text-lg text-on-surface-variant mb-12 max-w-2xl">
           Institutional governance by experienced leaders committed to
           sovereign-scale agro-industrial transformation.
         </p>
@@ -49,7 +49,7 @@ export function BoardSection() {
           {boardMembers.map((member) => (
             <div
               key={member.name}
-              className="bg-surface-white border border-surface-stone rounded-lg p-8 hover:border-secondary transition-colors"
+              className="bg-surface-container-lowest border border-outline-variant/10 rounded-3xl p-8 shadow-institutional hover:border-secondary transition-colors"
             >
               <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-lg font-bold mb-4">
                 {member.initials}
@@ -57,10 +57,10 @@ export function BoardSection() {
               <div className="text-xs font-semibold text-secondary tracking-wider uppercase mb-1">
                 {member.title}
               </div>
-              <h3 className="text-lg font-semibold text-surface-charcoal mb-2">
+              <h3 className="text-lg font-semibold text-on-surface mb-2">
                 {member.name}
               </h3>
-              <p className="text-sm text-surface-slate">{member.description}</p>
+              <p className="text-sm text-on-surface-variant">{member.description}</p>
             </div>
           ))}
         </div>
