@@ -21,6 +21,16 @@ export default function AboutPage() {
       <main className="flex-1">
         <AboutHeroSection />
         <SBUSection />
+        <section className="py-stack-lg md:py-[120px] px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+          <div className="max-w-container-max mx-auto text-center md:text-left">
+            <h1 className="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-primary mb-stack-md">
+              Institutional Governance &amp; Operating Leadership
+            </h1>
+            <p className="text-body-lg font-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+              Zuma Agro-Allied Integrated Enterprise is a sovereign-scale agro-industrial transformation platform designed to solve Nigeria&apos;s structural food system failures. Our governance and operating architecture ensures disciplined integration across the entire agricultural value chain.
+            </p>
+          </div>
+        </section>
         <BoardSection />
         <ExecutiveSection />
         <PartnersSection />

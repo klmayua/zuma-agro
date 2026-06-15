@@ -1,66 +1,30 @@
-import { Badge } from "@/components/ui/Badge";
-
 const boardMembers = [
-  {
-    name: "Chairman",
-    title: "Board Chairman",
-    description:
-      "Presides over the Board of Directors, ensuring governance integrity, fiduciary oversight, and strategic alignment with national development priorities.",
-    initials: "CH",
-  },
-  {
-    name: "Chief Executive Officer",
-    title: "Group CEO",
-    description:
-      "Leads enterprise-wide strategy execution, operational deployment, and stakeholder relations across all six strategic business units.",
-    initials: "CEO",
-  },
-  {
-    name: "Chief Financial Officer",
-    title: "CFO",
-    description:
-      "Oversees capital structuring, financial controls, investor relations, and treasury operations for sovereign-scale agro-industrial investment.",
-    initials: "CFO",
-  },
-  {
-    name: "Chief Technology Officer",
-    title: "CTO",
-    description:
-      "Directs technology infrastructure, data sovereignty systems, and digital platforms powering the enterprise intelligence layer.",
-    initials: "CTO",
-  },
+  { title: "Founder / Chair", role: "Strategic Oversight", icon: "person", description: "Approves enterprise strategy, annual budget, and major capital expenditures." },
+  { title: "Independent Director", role: "Audit & Risk Committee", icon: "account_balance", description: "Oversight of financial controls, risk management, and compliance." },
+  { title: "Independent Director", role: "Finance & Investment", icon: "trending_up", description: "Capital allocation, funding strategy, and major transaction review." },
+  { title: "Sovereign Partner Rep", role: "Governance & Nominations", icon: "gavel", description: "Board composition, leadership succession, and governance standards." },
 ];
 
 export function BoardSection() {
   return (
-    <section className="py-16 md:py-24">
-      <div className="max-w-[1280px] mx-auto px-16 md:px-8">
-        <Badge variant="outline" className="mb-4">
-          Governance
-        </Badge>
-        <h2 className="text-3xl md:text-4xl font-bold font-display text-on-surface mb-4">
-          Board of Directors
-        </h2>
-        <p className="text-lg text-on-surface-variant mb-12 max-w-2xl">
-          Institutional governance by experienced leaders committed to
-          sovereign-scale agro-industrial transformation.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <section className="py-stack-lg md:py-[120px] px-margin-mobile md:px-margin-desktop bg-surface-container-low border-y border-outline-variant">
+      <div className="max-w-container-max mx-auto">
+        <div className="mb-stack-lg text-center md:text-left">
+          <span className="text-secondary font-label-bold text-label-bold uppercase tracking-widest mb-base block">Oversight Systems</span>
+          <h2 className="text-headline-lg font-headline-lg text-primary">Board of Directors</h2>
+          <p className="text-body-lg font-body-lg text-on-surface-variant mt-stack-sm max-w-2xl">
+            Structured for competence, independence, and continuity. The board includes founder representation, independent directors with relevant expertise, and representatives of significant investors or sovereign partners.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {boardMembers.map((member) => (
-            <div
-              key={member.name}
-              className="bg-surface-container-lowest border border-outline-variant/10 rounded-3xl p-8 shadow-institutional hover:border-secondary transition-colors"
-            >
-              <div className="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-lg font-bold mb-4">
-                {member.initials}
+            <div key={member.title + member.role} className="bg-surface border border-outline-variant rounded-DEFAULT p-stack-md text-center md:text-left shadow-sm">
+              <div className="w-24 h-24 bg-surface-container-highest rounded-full mx-auto md:mx-0 mb-stack-sm flex items-center justify-center text-on-surface-variant">
+                <span className="material-symbols-outlined text-4xl">{member.icon}</span>
               </div>
-              <div className="text-xs font-semibold text-secondary tracking-wider uppercase mb-1">
-                {member.title}
-              </div>
-              <h3 className="text-lg font-semibold text-on-surface mb-2">
-                {member.name}
-              </h3>
-              <p className="text-sm text-on-surface-variant">{member.description}</p>
+              <h3 className="text-headline-md font-headline-md text-primary mb-1">{member.title}</h3>
+              <p className="text-label-bold font-label-bold text-secondary mb-3">{member.role}</p>
+              <p className="text-body-md font-body-md text-on-surface-variant">{member.description}</p>
             </div>
           ))}
         </div>

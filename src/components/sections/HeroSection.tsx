@@ -1,28 +1,28 @@
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
-
 export function HeroSection() {
   return (
-    <section className="relative bg-[#0a110d] text-white overflow-hidden min-h-[700px]">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 to-primary-dark/90" />
-      <div className="relative max-w-[1280px] mx-auto px-16 md:px-8 py-24 md:py-32 flex flex-col justify-center min-h-[700px]">
-        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 px-4 py-2 w-fit mb-8">
-          <div className="w-2 h-2 bg-secondary rounded-full" />
-          <span className="text-sm font-semibold tracking-wider uppercase">Sovereign Framework</span>
-        </div>
-        <h1 className="font-display text-4xl md:text-5xl lg:text-display-lg font-bold leading-tight mb-6 max-w-3xl tracking-tight">
-          Sovereign Agro-Industrial Transformation
+    <section className="relative w-full overflow-hidden min-h-[700px] flex flex-col justify-center py-4xl px-margin-mobile md:px-margin-desktop">
+      <div className="absolute inset-0 z-0 bg-[#0a110d]">
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/60 to-transparent" />
+      </div>
+      <div className="relative z-10 w-full max-w-container-max mx-auto text-left flex flex-col items-start gap-lg">
+        <span className="font-executive-caps text-executive-caps text-secondary tracking-widest uppercase bg-white/10 px-sm py-xs rounded-full border border-white/20 inline-block backdrop-blur-md">
+          Strategic Initiative
+        </span>
+        <h1 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-xl md:text-headline-xl text-white max-w-4xl leading-tight">
+          Sovereign Agro-Industrial Transformation Framework
         </h1>
-        <p className="text-body-lg text-white/80 mb-10 max-w-2xl">
-          Building Nigeria&apos;s premier agro-industrial infrastructure through institutional partnerships and data-driven operations.
+        <p className="font-body-lg text-body-lg text-white/90 max-w-2xl">
+          Building Nigeria&apos;s national productivity infrastructure for food security and continental competitiveness. Zuma Agro-Allied is designed to solve Nigeria&apos;s structural food system failures through a disciplined, integrated, and replicable operating architecture.
         </p>
-        <div className="flex flex-wrap gap-4">
-          <Button variant="primary" href="/framework">
+        <div className="flex flex-col sm:flex-row gap-md mt-md">
+          <a href="/framework" className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-xs shadow-lg">
             Explore Framework
-          </Button>
-          <Button variant="secondary" href="/investors">
+            <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
+          </a>
+          <a href="/investors" className="bg-transparent border-2 border-white/30 text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:bg-white/10 transition-colors flex items-center justify-center backdrop-blur-sm">
             Download Prospectus
-          </Button>
+            <span className="material-symbols-outlined text-[20px] ml-xs">download</span>
+          </a>
         </div>
       </div>
     </section>

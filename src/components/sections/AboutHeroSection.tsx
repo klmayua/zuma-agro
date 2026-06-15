@@ -1,44 +1,17 @@
-import { Badge } from "@/components/ui/Badge";
-
 export function AboutHeroSection() {
   return (
-    <section className="relative bg-surface-charcoal text-white overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary-dark/90 to-surface-charcoal/95" />
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary-light/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+    <section className="relative min-h-[80vh] flex items-center py-stack-lg md:py-[180px] px-margin-mobile md:px-margin-desktop overflow-hidden">
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-primary/70 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
       </div>
-      <div className="relative max-w-[1280px] mx-auto px-10 md:px-6 py-20 md:py-32">
-        <Badge variant="secondary" className="mb-6">
-          About Zuma Agro-Allied
-        </Badge>
-        <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight mb-6 max-w-4xl tracking-tight">
+      <div className="relative z-10 max-w-container-max mx-auto w-full text-center md:text-left mt-10 md:mt-0">
+        <h1 className="text-[40px] md:text-[64px] font-display-lg text-white mb-stack-md max-w-4xl leading-tight">
           A Sovereign Asset for National Transformation
         </h1>
-        <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl">
-          Zuma Agro-Allied Integrated Enterprise is Nigeria&apos;s premier
-          sovereign-scale agro-industrial platform, architected to deliver
-          food security, import substitution, and rural economic
-          transformation across the federation.
+        <p className="text-[18px] md:text-[20px] font-body-lg text-white/90 max-w-3xl leading-relaxed">
+          Zuma Agro-Allied is a national productivity infrastructure connecting production, aggregation, and industrial processing under a single governance framework. We are engineered to solve Nigeria&apos;s structural food system failures through a disciplined, integrated, and replicable operating architecture.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
-          {[
-            { value: "6", label: "Strategic Business Units" },
-            { value: "500K", label: "Hectares Target" },
-            { value: "34M+", label: "Arable Land Hectares" },
-            { value: "$10B+", label: "Import Substitution" },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-white/5 border border-white/10 rounded-lg p-4"
-            >
-              <div className="text-2xl font-bold text-secondary">
-                {stat.value}
-              </div>
-              <div className="text-xs text-white/60 mt-1">{stat.label}</div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

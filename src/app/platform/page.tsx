@@ -17,11 +17,13 @@ export default function PlatformPage() {
     <>
       <Header />
       <MobileHeader />
-      <main className="flex-1">
-        <PlatformHeroSection />
-        <EISSection />
-        <OperationalNodesSection />
-        <SBUCardsSection />
+      <main className="flex-grow">
+        <div className="pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+          <PlatformHeroSection />
+          <EISSection />
+          <OperationalNodesSection />
+          <SBUCardsSection />
+        </div>
       </main>
       <Footer />
       <BottomNav />

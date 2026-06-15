@@ -1,66 +1,30 @@
-import { Badge } from "@/components/ui/Badge";
-
 const executives = [
-  {
-    name: "General Manager",
-    title: "GM",
-    description:
-      "Day-to-day operational leadership, coordinating across all business units to ensure execution velocity and performance targets are met.",
-    initials: "GM",
-  },
-  {
-    name: "Chief Financial Officer",
-    title: "CFO",
-    description:
-      "Financial strategy, capital allocation, risk management, and reporting integrity across the enterprise portfolio.",
-    initials: "CFO",
-  },
-  {
-    name: "Chief Technology Officer",
-    title: "CTO",
-    description:
-      "Technology systems, data platforms, precision agriculture tools, and the enterprise intelligence architecture.",
-    initials: "CTO",
-  },
-  {
-    name: "Chief Legal Officer",
-    title: "CLO",
-    description:
-      "Legal governance, regulatory compliance, contract management, and land acquisition oversight across all operating corridors.",
-    initials: "CLO",
-  },
+  { name: "General Manager", role: "Strategic Operations & Deployment", description: "Directs the execution of large-scale agrarian transformation projects across the federation." },
+  { name: "Chief Financial Officer", role: "Capital Architecture & Financial Controls", description: "Manages capital allocation, investment frameworks, and institutional financial reporting." },
+  { name: "Chief Technology Officer", role: "Integrated Systems & Intelligence", description: "Oversees the digital backbone of the platform, from precision ag-tech to supply chain logistics." },
+  { name: "Chief Legal Officer", role: "Governance & Regulatory Compliance", description: "Ensures adherence to sovereign legal frameworks and international governance standards." },
 ];
 
 export function ExecutiveSection() {
   return (
-    <section className="py-16 md:py-24 bg-surface">
-      <div className="max-w-[1280px] mx-auto px-10 md:px-6">
-        <Badge variant="outline" className="mb-4">
-          Leadership
-        </Badge>
-        <h2 className="text-3xl md:text-4xl font-bold text-on-surface mb-4">
-          Executive Management
-        </h2>
-        <p className="text-lg text-on-surface-variant mb-12 max-w-2xl">
-          Seasoned professionals driving operational excellence and
-          execution discipline across the enterprise.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <section className="py-stack-lg md:py-[120px] px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+      <div className="max-w-container-max mx-auto">
+        <div className="mb-stack-lg text-center md:text-left">
+          <span className="text-secondary font-label-bold text-label-bold uppercase tracking-widest mb-base block">Executive Leadership</span>
+          <h2 className="text-headline-lg font-headline-lg text-primary">Executive Management &amp; C-Level Leadership</h2>
+          <p className="text-body-lg font-body-lg text-on-surface-variant mt-stack-sm max-w-2xl">
+            Driving the platform&apos;s mission through specialized expertise and strategic oversight of the integrated value chain.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
           {executives.map((exec) => (
-            <div
-              key={exec.name}
-              className="bg-surface-container-lowest border border-outline-variant rounded-lg p-8 hover:border-secondary transition-colors"
-            >
-              <div className="w-16 h-16 bg-surface-charcoal text-white rounded-full flex items-center justify-center text-lg font-bold mb-4">
-                {exec.initials}
+            <div key={exec.name} className="flex flex-col">
+              <div className="aspect-square bg-surface-container-low rounded-DEFAULT mb-stack-sm flex items-center justify-center text-on-surface-variant/20">
+                <span className="material-symbols-outlined text-5xl">person</span>
               </div>
-              <div className="text-xs font-semibold text-primary tracking-wider uppercase mb-1">
-                {exec.title}
-              </div>
-              <h3 className="text-lg font-semibold text-on-surface mb-2">
-                {exec.name}
-              </h3>
-              <p className="text-sm text-on-surface-variant">{exec.description}</p>
+              <h3 className="text-headline-md font-headline-md text-primary mb-1">{exec.name}</h3>
+              <p className="text-label-bold font-label-bold text-secondary mb-2">{exec.role}</p>
+              <p className="text-body-md font-body-md text-on-surface-variant">{exec.description}</p>
             </div>
           ))}
         </div>

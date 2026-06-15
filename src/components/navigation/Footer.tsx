@@ -1,109 +1,106 @@
 import Link from "next/link";
 import Image from "next/image";
-import { navigation } from "@/lib/design-tokens";
+
+const footerColumns = [
+  {
+    title: "Platform",
+    links: [
+      { label: "Framework", href: "/framework" },
+      { label: "Strategic Business Units", href: "/platform" },
+      { label: "Operations", href: "/platform" },
+      { label: "Technology Stack", href: "/platform" },
+    ],
+  },
+  {
+    title: "Institutional",
+    links: [
+      { label: "Governance Board", href: "/governance" },
+      { label: "ESG Standards", href: "/governance" },
+      { label: "Risk Management", href: "/governance" },
+      { label: "Continuity Planning", href: "/governance" },
+    ],
+  },
+  {
+    title: "Access",
+    links: [
+      { label: "Investors & DFIs", href: "/investors" },
+      { label: "Contact Enterprise", href: "/partnership" },
+      { label: "Partnership", href: "/partnership" },
+      { label: "Press & Media", href: "/about" },
+      { label: "Careers", href: "/about" },
+    ],
+  },
+  {
+    title: "Locations",
+    links: [
+      { label: "Abuja HQ", href: "#" },
+      { label: "Makurdi Hub", href: "#" },
+      { label: "Lagos Terminal", href: "#" },
+    ],
+  },
+];
 
 export function Footer() {
   return (
-    <footer className="bg-primary text-white">
-      <div className="max-w-[1280px] mx-auto px-16 md:px-8 py-16 md:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12">
-          <div className="lg:col-span-4">
-            <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-6">
-              <h3 className="text-lg font-semibold mb-3">Sovereign Insights</h3>
-              <p className="text-sm text-white/70 mb-4">
-                Subscribe to our institutional intelligence briefing.
-              </p>
-              <div className="flex gap-2">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder:text-white/40 focus:outline-none focus:border-secondary"
-                />
-                <button className="bg-secondary text-white px-6 py-3 rounded-xl text-sm font-bold hover:opacity-90 transition-opacity">
-                  Subscribe
-                </button>
-              </div>
+    <footer className="w-full relative bottom-0 bg-primary text-white pt-4xl pb-xl">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-3xl">
+        <div className="bg-white/5 border border-white/10 rounded-2xl p-xl flex flex-col md:flex-row items-center justify-between gap-xl backdrop-blur-md">
+          <div>
+            <h4 className="font-headline-md text-[24px] font-bold text-white mb-xs">Sovereign Insights</h4>
+            <p className="text-white/70 font-body-md">Executive briefings on agro-industrial transformation.</p>
+          </div>
+          <form className="flex w-full md:w-auto max-w-md gap-sm">
+            <input
+              className="bg-white/10 text-white px-lg py-md rounded-lg border border-white/20 focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary flex-grow font-body-md placeholder:text-white/40 min-w-[250px]"
+              placeholder="Executive Email"
+              required
+              type="email"
+            />
+            <button className="bg-secondary text-white font-label-md text-label-md px-xl py-md rounded-lg hover:opacity-90 transition-opacity font-bold shadow-lg" type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-2xl items-start mb-3xl">
+        <div className="col-span-1 lg:col-span-4 flex flex-col gap-xl">
+          <div className="h-20 w-auto">
+            <Image
+              src="/zuma_ago_full.png"
+              alt="Zuma Agro Logo"
+              width={160}
+              height={80}
+              className="h-full w-auto object-contain brightness-0 invert"
+            />
+          </div>
+          <p className="font-body-md text-[16px] text-white/70 max-w-sm leading-relaxed">
+            A sovereign-scale integration architecture connecting production, processing, and distribution across Nigeria.
+          </p>
+        </div>
+        <div className="col-span-1 lg:col-span-8 grid grid-cols-2 md:grid-cols-4 gap-xl w-full">
+          {footerColumns.map((col) => (
+            <div key={col.title} className="flex flex-col gap-md">
+              <h4 className="font-executive-caps text-[14px] font-bold tracking-[0.15em] uppercase mb-sm text-secondary">{col.title}</h4>
+              {col.links.map((link) => (
+                <Link key={link.label} href={link.href} className="font-body-md text-[16px] text-white/80 hover:text-white transition-colors">
+                  {link.label}
+                </Link>
+              ))}
             </div>
-          </div>
-
-          <div className="lg:col-span-2">
-            <h4 className="font-executive-caps text-secondary mb-4">Platform</h4>
-            <ul className="space-y-3">
-              {navigation.footer.platform.map((item) => (
-                <li key={item.label}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="lg:col-span-2">
-            <h4 className="font-executive-caps text-secondary mb-4">Framework</h4>
-            <ul className="space-y-3">
-              {navigation.footer.framework.map((item) => (
-                <li key={item.label}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="lg:col-span-2">
-            <h4 className="font-executive-caps text-secondary mb-4">Governance</h4>
-            <ul className="space-y-3">
-              {navigation.footer.governance.map((item) => (
-                <li key={item.label}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="lg:col-span-2">
-            <h4 className="font-executive-caps text-secondary mb-4">Connect</h4>
-            <ul className="space-y-3">
-              {navigation.footer.connect.map((item) => (
-                <li key={item.label}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-white/70 hover:text-white transition-colors"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          ))}
         </div>
       </div>
 
       <div className="border-t border-white/10">
-        <div className="max-w-[1280px] mx-auto px-16 md:px-8 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <Image
-            src="/zuma_ago_full.png"
-            alt="Zuma Agro-Allied"
-            width={120}
-            height={36}
-            className="h-8 w-auto brightness-0 invert"
-          />
-          <p className="text-xs text-white/50">
-            &copy; 2026 Zuma Agro-Allied. All rights reserved.
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-lg flex flex-col md:flex-row justify-between items-center gap-md">
+          <p className="font-label-sm text-[14px] text-white/50">
+            &copy; Zuma Agro-Allied | 2026. All rights reserved.
           </p>
+          <div className="flex gap-xl">
+            <a className="font-label-sm text-[14px] text-white/50 hover:text-white transition-colors" href="#">Privacy Policy</a>
+            <a className="font-label-sm text-[14px] text-white/50 hover:text-white transition-colors" href="#">Terms of Engagement</a>
+          </div>
         </div>
       </div>
     </footer>
