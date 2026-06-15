@@ -15,7 +15,7 @@ export default function GovernancePage() {
     <>
       <Header />
       <MobileHeader />
-      <main className="flex-1">
+      <main className="flex-1 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
         <GovernanceHeroSection />
         <ControlsBentoSection />
       </main>

@@ -1,151 +1,100 @@
-import { Badge } from "@/components/ui/Badge";
-
 const phases = [
   {
-    phase: "Phase 0",
-    title: "Foundation & Validation",
+    phase: "Phase Zero",
+    title: "Infrastructural Anchor",
     timeline: "Q3 2026",
-    status: "current",
-    items: [
-      "Complete corporate restructuring",
-      "Finalize seed bank partnerships",
-      "Deploy pilot plots (500 Ha)",
-      "Establish data collection systems",
-    ],
+    description: "Secure primary storage facility and establish baseline logistics routes. Initial soil mapping and local outgrower vetting protocols activated.",
+    tags: ["Storage Sec", "Soil Audit"],
+    isCurrent: true,
   },
   {
-    phase: "Phase 1",
-    title: "Pilot Expansion",
+    phase: "Phase One",
+    title: "Controlled Cultivation",
     timeline: "Q4 2026",
-    status: "upcoming",
-    items: [
-      "Scale to 2,000 Ha across Benue Valley",
-      "Achieve MVZ yield targets for maize",
-      "Launch soybean crushing facility",
-      "Deploy precision agriculture systems",
-    ],
+    description: "Deployment of proprietary seed capital across first 500 Hectares. Implementation of rigid agronomist oversight and initial yield tracking metrics.",
+    progress: 50,
+    isCurrent: false,
   },
   {
-    phase: "Phase 2",
-    title: "Commercial Scaling",
-    timeline: "Q1-Q2 2027",
-    status: "upcoming",
-    items: [
-      "Expand to 10,000 Ha",
-      "Commission processing plants",
-      "Establish distribution networks",
-      "Onboard smallholder clusters",
-    ],
+    phase: "Phase Two",
+    title: "Harvest & Processing",
+    timeline: "Q1 2027",
+    description: "First major off-take execution. Activation of localized processing nodes to minimize transit waste and maximize grade quality.",
+    isCurrent: false,
   },
   {
-    phase: "Phase 3",
-    title: "Full Operational Capacity",
+    phase: "Phase Three",
+    title: "Institutional Scale",
     timeline: "Q3 2027",
-    status: "upcoming",
-    items: [
-      "Achieve 50,000 Ha operational area",
-      "Full value chain integration",
-      "Pan-Nigeria deployment ready",
-      "Export corridor activation",
-    ],
+    description: "Integration of automated sorting and secondary value-add processing. Expansion parameters unlocked based on Phase 1 & 2 yield verification.",
+    isDashed: true,
+    isCurrent: false,
   },
 ];
 
 export function TimelineSection() {
   return (
-    <section className="py-16 md:py-24 bg-surface-stone/30">
-      <div className="max-w-[1280px] mx-auto px-10 md:px-6">
-        <div className="mb-12">
-          <Badge variant="outline" className="mb-4">
-            Deployment Timeline
-          </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold text-surface-charcoal mb-4">
-            Four-Phase Rollout
+    <section className="texture-bg border-y border-surface-variant py-stack-lg my-stack-lg">
+      <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="font-headline-lg text-headline-lg text-primary mb-4">
+            4.2 Pilot Deployment Sequencing
           </h2>
-          <p className="text-lg text-surface-slate max-w-3xl">
-            A disciplined, phased approach to scaling — from validation to
-            continental deployment.
+          <p className="font-body-lg text-body-lg text-on-surface-variant">
+            The structured phase-gate approach to establishing operational dominance in the target corridor.
           </p>
         </div>
 
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-surface-stone md:-translate-x-px" />
-
-          <div className="space-y-8 md:space-y-0">
-            {phases.map((phase, index) => (
-              <div
+        <div className="relative timeline-line max-w-4xl mx-auto py-8">
+          {phases.map((phase, index) => {
+            const isOdd = index % 2 !== 0;
+            return (
+              <div 
                 key={phase.phase}
-                className={`relative flex flex-col md:flex-row ${
-                  index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                } items-start md:items-center md:mb-16`}
+                className={`relative flex items-center justify-between md:justify-normal ${
+                  index % 2 === 0 ? "md:odd:flex-row-reverse" : "md:even:flex-row"
+                } group mb-12`}
               >
-                {/* Timeline dot */}
-                <div className="absolute left-4 md:left-1/2 w-3 h-3 rounded-full bg-primary border-4 border-surface-white md:-translate-x-1.5 -translate-x-1.5 z-10" />
-
-                {/* Content */}
-                <div
-                  className={`flex-1 ml-10 md:ml-0 ${
-                    index % 2 === 0
-                      ? "md:pr-12 md:text-right"
-                      : "md:pl-12 md:text-left"
-                  }`}
-                >
-                  <div
-                    className={`bg-surface-white border border-surface-stone rounded-lg p-6 ${
-                      phase.status === "current"
-                        ? "border-primary shadow-md"
-                        : ""
-                    }`}
-                  >
-                    <div className="flex items-center gap-3 mb-3 flex-wrap">
-                      <span className="text-xs font-semibold text-primary uppercase tracking-wider">
-                        {phase.phase}
-                      </span>
-                      <span className="text-xs text-surface-slate">
-                        {phase.timeline}
-                      </span>
-                      {phase.status === "current" && (
-                        <span className="px-2 py-0.5 bg-primary/10 text-primary text-xs rounded-full font-medium">
-                          Current
-                        </span>
-                      )}
-                    </div>
-                    <h3 className="text-lg font-semibold text-surface-charcoal mb-3">
-                      {phase.title}
-                    </h3>
-                    <ul
-                      className={`space-y-2 text-sm text-surface-slate ${
-                        index % 2 === 0 ? "md:text-right" : "md:text-left"
-                      }`}
-                    >
-                      {phase.items.map((item) => (
-                        <li key={item} className="flex items-start gap-2">
-                          <svg
-                            className="w-4 h-4 mt-0.5 text-primary flex-shrink-0"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M5 13l4 4L19 7"
-                            />
-                          </svg>
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
+                <div className="hidden md:block w-5/12"></div>
+                <div className={`absolute left-6 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full border-4 border-background z-10 ${
+                  phase.isCurrent ? "bg-secondary shadow-[0_0_0_4px_rgba(168,134,45,0.2)]" : "bg-surface-variant group-hover:bg-secondary transition-colors"
+                }`}></div>
+                <div className={`w-full ml-16 md:ml-0 md:w-5/12 bg-background p-6 border rounded shadow-sm group-hover:border-secondary transition-colors ${
+                  phase.isDashed ? "opacity-80 border-dashed" : "border-surface-variant"
+                }`}>
+                  <div className="flex items-center justify-between mb-2">
+                    <span className={`font-label-bold text-label-bold tracking-widest uppercase ${
+                      phase.isCurrent ? "text-secondary" : "text-on-surface-variant group-hover:text-secondary transition-colors"
+                    }`}>
+                      {phase.phase}
+                    </span>
+                    <span className="bg-surface-variant text-on-surface-variant px-2 py-0.5 text-xs rounded">
+                      {phase.timeline}
+                    </span>
                   </div>
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{phase.title}</h3>
+                  <p className="font-body-md text-body-md text-on-surface-variant mb-4">
+                    {phase.description}
+                  </p>
+                  {phase.tags && (
+                    <div className="flex flex-wrap gap-2">
+                      {phase.tags.map(tag => (
+                        <span key={tag} className="px-2 py-1 bg-surface-container-low border border-surface-variant text-xs rounded text-on-surface">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  {phase.progress !== undefined && (
+                    <div className="flex gap-2">
+                      <span className="w-1/2 h-1 bg-secondary rounded"></span>
+                      <span className="w-1/2 h-1 bg-surface-variant rounded"></span>
+                    </div>
+                  )}
                 </div>
-
-                {/* Empty space for the other side */}
-                <div className="hidden md:block flex-1" />
               </div>
-            ))}
-          </div>
+            );
+          })}
         </div>
       </div>
     </section>

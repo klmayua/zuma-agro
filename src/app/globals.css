@@ -141,6 +141,7 @@
   --spacing-container-max: 1280px;
 
   /* ── Width ──────────────────────────────────────────── */
+  --max-width-container-max: 1280px;
   --width-container-max: 1280px;
 
   /* ── Font families ──────────────────────────────────── */

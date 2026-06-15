@@ -45,7 +45,7 @@ export function SBUGrid() {
           <h2 className="font-headline-xl text-[40px] leading-tight text-primary mb-md font-bold">
             Integrated Operating Architecture
           </h2>
-          <p className="font-body-lg text-[24px] text-on-surface max-w-4xl leading-relaxed font-light">
+           <p className="w-full font-body-lg text-[24px] text-on-surface max-w-4xl leading-relaxed font-light">
             Zuma Agro operates as a holding company with six Strategic Business Units (SBUs) executing the platform logic. This structure enables risk segregation, capital stack optimisation, and governance clarity.
           </p>
         </div>

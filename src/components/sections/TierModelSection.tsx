@@ -1,99 +1,41 @@
-import { Card } from "@/components/ui/Card";
-
-const tiers = [
-  {
-    number: "01",
-    title: "Technical Assistance",
-    description:
-      "Advisory and capacity-building partnerships with development institutions, providing agronomic expertise, policy alignment, and institutional knowledge transfer to accelerate deployment timelines.",
-    deliverables: [
-      "Agronomic advisory services",
-      "Policy alignment frameworks",
-      "Capacity-building programs",
-      "Institutional knowledge transfer",
-    ],
-  },
-  {
-    number: "02",
-    title: "Joint Implementation",
-    description:
-      "Co-investment and co-execution partnerships with state governments and development finance institutions, sharing operational risk while expanding geographic reach across agricultural corridors.",
-    deliverables: [
-      "Co-investment structures",
-      "Shared operational risk",
-      "Geographic expansion",
-      "Joint execution teams",
-    ],
-  },
-  {
-    number: "03",
-    title: "Franchise Replication",
-    description:
-      "Scalable partnership model enabling qualified institutions to replicate the Zuma Agro-Allied operational framework within defined territories under brand and quality governance.",
-    deliverables: [
-      "Territory-based licensing",
-      "Brand governance standards",
-      "Quality assurance protocols",
-      "Replication playbooks",
-    ],
-  },
-];
-
 export function TierModelSection() {
   return (
-    <section className="py-16 md:py-24 bg-surface-ivory">
-      <div className="max-w-[1280px] mx-auto px-10 md:px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-surface-charcoal mb-4">
-          Three-Tier Partnership Model
-        </h2>
-        <p className="text-lg text-surface-slate mb-12 max-w-2xl">
-          A structured engagement framework calibrated to the institutional
-          capacity and strategic objectives of each partner category.
-        </p>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {tiers.map((tier) => (
-            <Card key={tier.number} className="flex flex-col">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-primary text-white rounded-full flex items-center justify-center text-sm font-semibold">
-                  {tier.number}
-                </div>
-                <h3 className="text-lg font-semibold text-surface-charcoal">
-                  {tier.title}
-                </h3>
-              </div>
-              <p className="text-sm text-surface-slate mb-6 flex-1">
-                {tier.description}
-              </p>
-              <div className="border-t border-surface-stone pt-4">
-                <h4 className="text-xs font-semibold text-surface-slate tracking-wider uppercase mb-3">
-                  Key Deliverables
-                </h4>
-                <ul className="space-y-2">
-                  {tier.deliverables.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-2 text-sm text-surface-charcoal"
-                    >
-                      <svg
-                        className="w-4 h-4 text-primary mt-0.5 flex-shrink-0"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </Card>
-          ))}
+    <section className="w-full py-4xl bg-surface">
+      <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div className="text-center md:text-left mb-xl">
+          <h2 className="font-headline-xl text-[40px] leading-tight text-primary mb-md font-bold">The Three-Tier Partnership Model</h2>
+          <p className="font-body-lg text-[24px] text-on-surface max-w-4xl leading-relaxed font-light">
+            Our engagements are built on a foundation of rigorous standards, mutual benefit, and absolute accountability. We operate as a trusted steward of capital and land resources through a structured three-tier model.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-xl">
+          <div className="bg-white rounded-3xl p-xl shadow-institutional border border-outline-variant/10 flex flex-col items-start transition-all duration-300 hover:shadow-2xl">
+            <div className="px-md py-sm rounded-lg font-headline-md text-[24px] font-bold shrink-0 border border-secondary/30 bg-secondary/10 text-secondary mb-lg">01</div>
+            <h3 className="font-headline-md text-[28px] font-bold text-on-surface mb-md">Technical Assistance</h3>
+            <p className="font-body-md text-[16px] leading-relaxed text-on-surface-variant">
+              Advisory, planning, and systems design. Establishing the operational blueprint and governance structures required for sovereign-scale agricultural transformation.
+            </p>
+          </div>
+          <div className="bg-white rounded-3xl p-xl shadow-institutional border border-outline-variant/10 flex flex-col items-start transition-all duration-300 hover:shadow-2xl">
+            <div className="px-md py-sm rounded-lg font-headline-md text-[24px] font-bold shrink-0 border border-secondary/30 bg-secondary/10 text-secondary mb-lg">02</div>
+            <h3 className="font-headline-md text-[28px] font-bold text-on-surface mb-md">Joint Implementation</h3>
+            <p className="font-body-md text-[16px] leading-relaxed text-on-surface-variant">
+              Shared operations, infrastructure, and commercialization. Active partnership in executing the strategic mandate, deploying advanced agronomic practices and ensuring supply chain integrity.
+            </p>
+          </div>
+          <div className="bg-white rounded-3xl p-xl shadow-institutional border border-outline-variant/10 flex flex-col items-start transition-all duration-300 hover:shadow-2xl">
+            <div className="px-md py-sm rounded-lg font-headline-md text-[24px] font-bold shrink-0 border border-secondary/30 bg-secondary/10 text-secondary mb-lg">03</div>
+            <h3 className="font-headline-md text-[28px] font-bold text-on-surface mb-md">Franchise Replication</h3>
+            <p className="font-body-md text-[16px] leading-relaxed text-on-surface-variant">
+              Licensed Success template with absolute fidelity to Zuma standards. Scaling the established success template across new regions while maintaining absolute fidelity to the Zuma Agro-Allied standard.
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-start mt-3xl">
+          <button className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-xs shadow-lg">
+            <span className="material-symbols-outlined text-[20px]">handshake</span>
+            Become a Partner
+          </button>
         </div>
       </div>
     </section>

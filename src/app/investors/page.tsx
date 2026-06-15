@@ -15,7 +15,7 @@ export default function InvestorsPage() {
     <>
       <Header />
       <MobileHeader />
-      <main className="flex-1">
+      <main className="flex-grow w-full">
         <InvestorsHeroSection />
         <CapitalBentoSection />
       </main>

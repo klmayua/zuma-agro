@@ -34,7 +34,7 @@ export function DoctrinesSection() {
           <h2 className="font-headline-xl text-[40px] leading-tight text-white mb-md font-bold">
             The Five Non-Negotiable Doctrines
           </h2>
-          <p className="font-body-lg text-[20px] text-white/80 max-w-4xl leading-relaxed">
+           <p className="w-full font-body-lg text-[20px] text-white/80 max-w-4xl leading-relaxed">
             Zuma Agro operates on a doctrine of disciplined integration. These principles govern every investment, partnership, and operational decision.
           </p>
         </div>

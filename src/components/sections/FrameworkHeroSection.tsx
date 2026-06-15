@@ -1,42 +1,31 @@
-import { Badge } from "@/components/ui/Badge";
-
 export function FrameworkHeroSection() {
   return (
-    <section className="relative bg-surface-charcoal text-white overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary-dark/90 to-surface-charcoal/95" />
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary-light/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+    <section className="px-margin-mobile md:px-margin-desktop py-stack-lg md:py-24 max-w-container-max mx-auto relative">
+      <div className="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none">
+        <div className="w-full h-full border-r border-b border-primary-fixed"></div>
+        <div className="absolute top-1/4 w-full border-t border-primary-fixed"></div>
       </div>
-      <div className="relative max-w-[1280px] mx-auto px-10 md:px-6 py-20 md:py-32">
-        <Badge variant="secondary" className="mb-6">
-          4.0
-        </Badge>
-        <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight mb-6 max-w-4xl tracking-tight">
-          Strategic Framework
-        </h1>
-        <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl">
-          The operational blueprint governing Zuma Agro-Allied&apos;s
-          sovereign-scale agro-industrial transformation — from yield validation
-          to continental deployment.
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl">
-          {[
-            { value: "5", label: "Non-Negotiable Doctrines" },
-            { value: "3", label: "MVZ Commodities" },
-            { value: "4", label: "Deployment Phases" },
-            { value: "Q3 2027", label: "Full Operational Capacity" },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-white/5 border border-white/10 rounded-lg p-4"
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter relative z-10">
+        <div className="md:col-span-8 space-y-stack-md">
+          <div className="inline-flex items-center space-x-2 px-3 py-1 bg-surface-container border border-surface-variant rounded-full text-primary font-label-bold text-label-sm">
+            <span className="w-2 h-2 rounded-full bg-secondary"></span>
+            <span>SECTION 4.0</span>
+          </div>
+          <h1 className="font-display-lg-mobile md:font-display-lg text-primary text-display-lg-mobile md:text-display-lg tracking-tight">
+            Strategic Framework &amp; Rollout Sequencing
+          </h1>
+          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Defining the execution vector for Zuma Agro-Allied. Anchored in the &apos;Minimum Viable Zuma&apos; philosophy, prioritizing immediate yield stability in the Benue Valley corridor before expansive scaling.
+          </p>
+          <div className="pt-stack-sm">
+            <a 
+              href="#" 
+              className="inline-flex items-center space-x-3 bg-secondary text-white px-6 py-3 hover:opacity-90 transition-all font-label-bold text-label-bold rounded shadow-sm"
             >
-              <div className="text-2xl font-bold text-secondary">
-                {stat.value}
-              </div>
-              <div className="text-xs text-white/60 mt-1">{stat.label}</div>
-            </div>
-          ))}
+              <span className="material-symbols-outlined icon-fill">download</span>
+              <span>Download Deployment Blueprint</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

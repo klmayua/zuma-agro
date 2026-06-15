@@ -9,7 +9,7 @@ export function AboutHeroSection() {
         <h1 className="text-[40px] md:text-[64px] font-display-lg text-white mb-stack-md max-w-4xl leading-tight">
           A Sovereign Asset for National Transformation
         </h1>
-        <p className="text-[18px] md:text-[20px] font-body-lg text-white/90 max-w-3xl leading-relaxed">
+         <p className="w-full text-[18px] md:text-[20px] font-body-lg text-white/90 max-w-3xl leading-relaxed">
           Zuma Agro-Allied is a national productivity infrastructure connecting production, aggregation, and industrial processing under a single governance framework. We are engineered to solve Nigeria&apos;s structural food system failures through a disciplined, integrated, and replicable operating architecture.
         </p>
       </div>

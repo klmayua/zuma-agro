@@ -3,16 +3,19 @@ const partnerData = [
     category: "Sovereign & Government",
     icon: "account_balance",
     partners: ["Federal Ministry of Agriculture", "Benue State Government", "Nasarawa State Government", "Taraba State Government"],
+    gridCols: "grid-cols-2 md:grid-cols-4",
   },
   {
     category: "Development Finance",
     icon: "payments",
     partners: ["African Development Bank (AfDB)", "International Finance Corp (IFC)", "U.S. DFC"],
+    gridCols: "grid-cols-2 md:grid-cols-3",
   },
   {
     category: "Corporate & Technical",
     icon: "precision_manufacturing",
     partners: ["Global Logistics Hubs", "Industrial Offtakers", "Processing Tech Providers"],
+    gridCols: "grid-cols-2 md:grid-cols-3",
   },
 ];
 
@@ -31,7 +34,7 @@ export function PartnersSection() {
           {partnerData.map((cat) => (
             <div key={cat.category}>
               <h4 className="text-label-bold font-label-bold text-on-surface-variant uppercase tracking-widest mb-stack-sm border-b border-outline-variant/20 pb-2">{cat.category}</h4>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-gutter">
+              <div className={`grid ${cat.gridCols} gap-gutter`}>
                 {cat.partners.map((partner) => (
                   <div key={partner} className="bg-surface-container-lowest p-stack-md rounded-DEFAULT border border-outline-variant/10 flex flex-col items-center justify-center text-center aspect-square md:aspect-video">
                     <div className="w-full h-12 mb-3 flex items-center justify-center opacity-60 grayscale hover:grayscale-0 transition-all">

@@ -44,10 +44,10 @@ export function Footer() {
   return (
     <footer className="w-full relative bottom-0 bg-primary text-white pt-4xl pb-xl">
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop mb-3xl">
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-xl flex flex-col md:flex-row items-center justify-between gap-xl backdrop-blur-md">
+         <div className="bg-white/5 border border-white/10 rounded-2xl p-xl flex flex-col md:flex-row items-center justify-between gap-xl backdrop-blur-md">
           <div>
             <h4 className="font-headline-md text-[24px] font-bold text-white mb-xs">Sovereign Insights</h4>
-            <p className="text-white/70 font-body-md">Executive briefings on agro-industrial transformation.</p>
+             <p className="w-full text-white/70 font-body-md">Executive briefings on agro-industrial transformation.</p>
           </div>
           <form className="flex w-full md:w-auto max-w-md gap-sm">
             <input
@@ -74,7 +74,7 @@ export function Footer() {
               className="h-full w-auto object-contain brightness-0 invert"
             />
           </div>
-          <p className="font-body-md text-[16px] text-white/70 max-w-sm leading-relaxed">
+           <p className="w-full font-body-md text-[16px] text-white/70 max-w-sm leading-relaxed">
             A sovereign-scale integration architecture connecting production, processing, and distribution across Nigeria.
           </p>
         </div>

@@ -1,35 +1,27 @@
-import { Badge } from "@/components/ui/Badge";
-import { MetricCard } from "@/components/ui/Card";
-
 export function ImpactHeroSection() {
   return (
-    <section className="relative bg-surface-charcoal text-white overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-dark/90 via-primary/80 to-surface-charcoal/95" />
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-1/2 w-[600px] h-[600px] bg-secondary/15 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary-light/20 rounded-full blur-3xl translate-y-1/2 translate-x-1/2" />
-      </div>
-      <div className="relative max-w-[1280px] mx-auto px-10 md:px-6 py-20 md:py-32 text-center">
-        <div className="flex justify-center mb-6">
-          <Badge variant="secondary">National Imperative</Badge>
-        </div>
-        <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight mb-6 max-w-4xl mx-auto tracking-tight">
-          Impact & National Multiplier Effects
+    <section className="paper-texture py-stack-lg md:py-[120px] px-margin-mobile md:px-margin-desktop min-h-[716px] flex flex-col justify-center items-center text-center">
+      <div className="max-w-container-max mx-auto space-y-stack-md">
+        <span className="inline-block px-4 py-1 border border-primary text-primary rounded-full font-label-bold text-label-bold uppercase tracking-wider">
+          National Imperative
+        </span>
+        <h1 className="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-primary max-w-4xl mx-auto leading-tight">
+          Addressing the $6–10B Annual Food Import Bill
         </h1>
-        <p className="text-lg md:text-xl text-white/80 mb-12 max-w-2xl mx-auto">
-          Every operational node creates cascading economic value — from farm
-          gate to national GDP, from rural households to foreign exchange
-          reserves.
+        <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mt-6">
+          A systemic vulnerability framed as a generational investment opportunity. By localizing agricultural production, we mitigate national security risks while unlocking immense economic multipliers.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
-          {[
-            { value: "34M+", label: "Hectares of Arable Land" },
-            { value: "400M", label: "Population to Feed" },
-            { value: "$-10B", label: "Annual Food Import Bill" },
-            { value: "20-40%", label: "Post-Harvest Losses" },
-          ].map((stat) => (
-            <MetricCard key={stat.label} value={stat.value} label={stat.label} />
-          ))}
+        <div className="mt-stack-lg grid grid-cols-1 md:grid-cols-2 gap-gutter max-w-3xl mx-auto">
+          <div className="bg-surface-container-low p-stack-md rounded border border-surface-variant flex flex-col items-center justify-center text-center shadow-sm">
+            <span className="font-headline-lg text-headline-lg text-secondary mb-2">34M+</span>
+            <span className="font-label-bold text-label-bold text-primary uppercase tracking-wide">Hectares of Arable Land</span>
+            <p className="font-body-md text-body-md text-on-surface-variant mt-2 text-sm">Underutilized potential awaiting institutional structuring.</p>
+          </div>
+          <div className="bg-surface-container-low p-stack-md rounded border border-surface-variant flex flex-col items-center justify-center text-center shadow-sm">
+            <span className="font-headline-lg text-headline-lg text-secondary mb-2">400M</span>
+            <span className="font-label-bold text-label-bold text-primary uppercase tracking-wide">Projected Population</span>
+            <p className="font-body-md text-body-md text-on-surface-variant mt-2 text-sm">The demographic imperative driving future domestic demand.</p>
+          </div>
         </div>
       </div>
     </section>

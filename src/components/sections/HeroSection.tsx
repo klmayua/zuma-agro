@@ -2,6 +2,11 @@ export function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden min-h-[700px] flex flex-col justify-center py-4xl px-margin-mobile md:px-margin-desktop">
       <div className="absolute inset-0 z-0 bg-[#0a110d]">
+        <img 
+          src="https://lh3.googleusercontent.com/aida/AP1WRLu1FUnla-mNDGgtVyB3uuWs8oJPoXHSHIvaoCEhLmN2MYbv9uQhQWmpxDsTNt9J1DfMMoUWbuefGef9HwCnAMPv1ioY_0CFucOr_i-e3E8-gPQzXavxc7cABHT6OJ6HSMr6QXh1gHOahrhvvR4GfQ2jLxUa7oRusWSEeufpt2OIHZ0T6-98sr-xTvmg_p7JNBXt4cxRs9aP7b9-Zc4WjbcF8it87fTun0FFdBXK9_DUzTsW53obbGf8dDg" 
+          alt="Benue Valley Agricultural Corridor" 
+          className="absolute inset-0 w-full h-full object-cover opacity-80" 
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/60 to-transparent" />
       </div>
       <div className="relative z-10 w-full max-w-container-max mx-auto text-left flex flex-col items-start gap-lg">

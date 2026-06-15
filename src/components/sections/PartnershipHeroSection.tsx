@@ -1,41 +1,29 @@
-import { Badge } from "@/components/ui/Badge";
-
 export function PartnershipHeroSection() {
   return (
-    <section className="relative bg-surface-charcoal text-white overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary-dark/90 to-surface-charcoal/95" />
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-        <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary-light/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+    <section className="relative w-full overflow-hidden min-h-[500px] flex flex-col justify-center py-4xl px-margin-mobile md:px-margin-desktop bg-[#0a110d]">
+      <div className="absolute inset-0 z-0">
+        <img
+          alt="Agricultural fields"
+          className="w-full h-full object-cover filter grayscale mix-blend-multiply opacity-40"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuATk2doVabYmtoP1dzii31tMXyab2HB9gpxuehwF0_GoMa7ZEI4sH_aGWjrqkonBfuxPhe6Q_1BJPFI4X_EhukoReENeozBaXU1aoBUQtEeNF_mCKbSFxoLtv2u08q0nIMbmvolizuWxJv0L2EG7EiEtxq_oHOUUeFjRxpwfWq27ydlRNgXpPdEJ__29wxXY_ZD6ssAWxM-CvrFinldiDfBVraJc6kgPwhjX8zrIFhACvSspoa4nvCB2tfRKHSnxATlvaNo5HSRgWQ"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/60 to-transparent"></div>
       </div>
-      <div className="relative max-w-[1280px] mx-auto px-10 md:px-6 py-20 md:py-32">
-        <Badge variant="secondary" className="mb-6">
+      <div className="max-w-container-max mx-auto relative z-10 w-full flex flex-col items-start gap-lg">
+        <span className="font-executive-caps text-executive-caps text-secondary tracking-widest uppercase bg-white/10 px-sm py-xs rounded-full border border-white/20 inline-block backdrop-blur-md">
           Institutional Coordination
-        </Badge>
-        <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-bold leading-tight mb-6 max-w-4xl tracking-tight">
-          Strategic Institutional Partnerships
+        </span>
+        <h1 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-xl md:text-headline-xl text-white max-w-4xl leading-tight">
+          Strategic Institutional <br /><span className="text-secondary">Partnerships</span>
         </h1>
-        <p className="text-lg md:text-xl text-white/80 mb-8 max-w-2xl">
-          Coordinating federal ministries, state governments, and institutional
-          investors through a structured partnership architecture designed for
-          sovereign-scale agro-industrial deployment.
+        <p className="font-body-lg text-body-lg text-white/90 max-w-2xl">
+          Sovereign-scale transformation through disciplined collaboration. We forge enduring alliances with governments, development finance institutions, and global investors to catalyze agricultural enterprise and secure generational prosperity.
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl">
-          {[
-            { value: "3-Tier", label: "Partnership Model" },
-            { value: "36+", label: "State Alignment" },
-            { value: "Federal", label: "Ministry Integration" },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-white/5 border border-white/10 rounded-lg p-4"
-            >
-              <div className="text-2xl font-bold text-secondary">
-                {stat.value}
-              </div>
-              <div className="text-xs text-white/60 mt-1">{stat.label}</div>
-            </div>
-          ))}
+        <div className="flex flex-col sm:flex-row gap-md mt-md">
+          <button className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-xs shadow-lg">
+            <span className="material-symbols-outlined text-[20px]">handshake</span>
+            Become a Partner
+          </button>
         </div>
       </div>
     </section>
