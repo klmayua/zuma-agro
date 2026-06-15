@@ -18,7 +18,7 @@ export default function PlatformPage() {
       <Header />
       <MobileHeader />
       <main className="flex-grow">
-        <div className="pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+        <div className="pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full paper-texture">
           <PlatformHeroSection />
           <EISSection />
           <OperationalNodesSection />

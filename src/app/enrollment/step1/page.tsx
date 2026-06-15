@@ -21,11 +21,10 @@ export default function EnrollmentStep1Page() {
         <section className="max-w-[720px] mx-auto px-10 md:px-6 py-16">
           <Badge variant="outline" className="mb-4">Step 1 of 4</Badge>
           <h1 className="text-h3 md:text-h2 font-semibold text-surface-charcoal mb-3">
-            Entity Classification
+            Institutional Classification
           </h1>
           <p className="text-body-lg text-surface-slate mb-10">
-            Register your organization to initiate the partnership protocol. All fields are required
-            for institutional verification.
+            Establish your organizational identity to align with the Sovereign framework&apos;s production, processing, and distribution architecture.
           </p>
           <div className="bg-surface-white border border-surface-stone rounded-xl p-8 md:p-10">
             <EnrollmentStep1Form />
