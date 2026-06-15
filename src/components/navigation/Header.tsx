@@ -23,7 +23,7 @@ export function Header() {
             />
           </Link>
         </div>
-        <nav className="hidden md:flex space-x-gutter">
+        <nav className="hidden md:flex items-center gap-gutter">
           {navigation.primary.map((item) => (
             <Link
               key={item.href}
