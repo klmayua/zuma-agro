@@ -5,7 +5,7 @@ export function AboutHeroSection() {
         <img
           alt="Aerial view of agricultural landscape symbolizing sovereign transformation"
           className="w-full h-full object-cover"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeTwEWqYOXqN8GHY8tD3dojL5ltxQ2t9vP9vW9VUfk3sF-NG3B2_EyRDMF5QADm7GFWfEJKtPn6M5OPbxfL_NbNrSAxwYAJlMYfZRE_WmzZJKZgIYQ8b66MqD8LmBPfRjD9eXpI6FF0FnVgJsJz3JCrVQz84ML1VQyQHWQ-2ppcJq2vHvBxfVGY0CTECJPtgFn0lPVhDFkGv7xKUXUDGjXQo3vQx0vK-Fg2_CRWUEk4BrWfSg9Z_y0BWOJxSFG5Ufbb03W3o0"
+          src="/hero_section_image.png"
         />
         <div className="absolute inset-0 bg-primary/70 mix-blend-multiply" />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />

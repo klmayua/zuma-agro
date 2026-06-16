@@ -16,7 +16,7 @@ export function GovernanceHeroSection() {
       <div className="w-full md:w-1/3 aspect-[4/3] bg-surface-container rounded border border-outline-variant overflow-hidden">
         <img 
           className="w-full h-full object-cover" 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO_XAtHzHeoJE-PZaoVQ09lNB9sihJlxUA7qZpW4zKHN0DWeWelv-8JeVbCC0w1WdHu4wjpUQxn_k7AMA8cvocReLTUFELJdz8a4ARx9t8BGM1PDyhQJUIMYJOHK4WtkdeM7MmqI4bSCaneEi-Dam2gZ3RQACOjJQKzjHRWQfhWs2DNL7ZvgqnH8-B8AO6I0PRvVMUHco2FTUQXU46utRBbVsoGgQH2HZNdD0O7SSOcz66wkAE74kspc_ZPBcJcrC4waFXCUHqStU" 
+          src="/boardroom_view.png" 
           alt="Boardroom View"
         />
       </div>

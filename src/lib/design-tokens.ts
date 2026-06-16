@@ -131,9 +131,9 @@ export const navigation = {
   cta: { label: 'Executive Access', href: '/enrollment-step-1' },
   mobile: [
     { label: 'Home', href: '/', icon: 'home' },
-    { label: 'Platform', href: '/platform-architecture', icon: 'grid' },
-    { label: 'Initiatives', href: '/strategic-framework', icon: 'layers' },
-    { label: 'Contact', href: '/institutional-partnerships', icon: 'mail' },
+    { label: 'About', href: '/about', icon: 'info' },
+    { label: 'Framework', href: '/strategic-framework', icon: 'layers' },
+    { label: 'Investors', href: '/investor-intelligence', icon: 'trending_up' },
     { label: 'More', href: '#more', icon: 'ellipsis' },
   ],
   footer: {

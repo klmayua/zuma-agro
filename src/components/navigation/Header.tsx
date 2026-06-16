@@ -40,18 +40,13 @@ export function Header() {
         </nav>
         <Link
           href={navigation.cta.href}
-          className="hidden md:inline-flex bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] items-center justify-center rounded hover:opacity-90 transition-colors shadow-lg flex gap-xs"
+          className="bg-secondary text-white font-label-md text-label-md h-[40px] md:h-[56px] px-[16px] md:px-[40px] inline-flex items-center justify-center rounded hover:opacity-90 transition-all shadow-lg flex gap-xs text-[11px] md:text-label-md font-bold"
         >
-          <span className="material-symbols-outlined text-[20px]" data-icon="admin_panel_settings">
+          <span className="material-symbols-outlined text-[16px] md:text-[20px]" data-icon="admin_panel_settings">
             admin_panel_settings
           </span>
-          Executive Access
+          <span>Executive Access</span>
         </Link>
-        <button className="md:hidden text-on-surface flex items-center justify-center">
-          <span className="material-symbols-outlined" data-icon="menu">
-            menu
-          </span>
-        </button>
       </div>
     </header>
   );

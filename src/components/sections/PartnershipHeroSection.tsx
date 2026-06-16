@@ -5,7 +5,7 @@ export function PartnershipHeroSection() {
         <img
           alt="Agricultural fields"
           className="w-full h-full object-cover filter grayscale mix-blend-multiply opacity-40"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuATk2doVabYmtoP1dzii31tMXyab2HB9gpxuehwF0_GoMa7ZEI4sH_aGWjrqkonBfuxPhe6Q_1BJPFI4X_EhukoReENeozBaXU1aoBUQtEeNF_mCKbSFxoLtv2u08q0nIMbmvolizuWxJv0L2EG7EiEtxq_oHOUUeFjRxpwfWq27ydlRNgXpPdEJ__29wxXY_ZD6ssAWxM-CvrFinldiDfBVraJc6kgPwhjX8zrIFhACvSspoa4nvCB2tfRKHSnxATlvaNo5HSRgWQ"
+          src="/hero_section_image.png"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-gray-900/95 via-gray-900/60 to-transparent"></div>
       </div>
