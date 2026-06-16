@@ -154,6 +154,17 @@
   --width-5xl: 64rem;
   --width-6xl: 72rem;
   --width-7xl: 80rem;
+  --max-width-xs: 20rem;
+  --max-width-sm: 24rem;
+  --max-width-md: 28rem;
+  --max-width-lg: 32rem;
+  --max-width-xl: 36rem;
+  --max-width-2xl: 42rem;
+  --max-width-3xl: 48rem;
+  --max-width-4xl: 56rem;
+  --max-width-5xl: 64rem;
+  --max-width-6xl: 72rem;
+  --max-width-7xl: 80rem;
 
   /* ── Font families ──────────────────────────────────── */
   --font-sans: 'Manrope', system-ui, sans-serif;
