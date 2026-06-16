@@ -65,7 +65,7 @@ export function Footer() {
 
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-2xl items-start mb-3xl">
         <div className="col-span-1 lg:col-span-4 flex flex-col gap-xl">
-          <div className="h-24 w-auto">
+          <div className="h-[163px] w-auto">
             <Image
               src="/zuma_ago_full.png"
               alt="Zuma Agro Logo"

@@ -19,7 +19,7 @@ export function Header() {
               alt="Zuma Agro Logo"
               width={200}
               height={80}
-              className="h-9 md:h-14 w-auto object-contain"
+              className="h-[61px] md:h-[95px] w-auto object-contain"
               priority
             />
           </Link>
