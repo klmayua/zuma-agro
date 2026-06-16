@@ -53,7 +53,7 @@ export function SBUGrid() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-xl">
           {sbus.map((sbu) => (
-            <div key={sbu.name} className="bg-white rounded-3xl p-xl shadow-institutional border border-outline-variant/10 flex flex-row items-start gap-lg transition-all duration-300 hover:shadow-2xl">
+            <div key={sbu.name} className="bg-white/70 backdrop-blur-md rounded-3xl p-xl shadow-institutional border border-outline-variant/10 flex flex-row items-start gap-lg transition-all duration-300 hover:shadow-2xl hover:bg-white/95">
               <div className="text-primary shrink-0">
                 <span className="material-symbols-outlined text-[64px] font-light leading-none">{sbu.icon}</span>
               </div>

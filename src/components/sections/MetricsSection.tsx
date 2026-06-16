@@ -11,7 +11,7 @@ export function MetricsSection() {
       <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-lg">
           {metrics.map((metric) => (
-            <div key={metric.label} className="bg-white rounded-2xl p-lg shadow-institutional border border-outline-variant/20 flex flex-col items-center justify-center text-center">
+            <div key={metric.label} className="bg-white/70 backdrop-blur-md rounded-2xl p-lg shadow-institutional border border-outline-variant/20 flex flex-col items-center justify-center text-center">
               <p className={`font-headline-md text-[36px] font-bold ${metric.color}`}>{metric.value}</p>
               <p className="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider mt-xs">{metric.label}</p>
             </div>

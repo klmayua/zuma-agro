@@ -9,16 +9,16 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="w-full top-0 sticky bg-white border-b border-outline-variant/20 z-50 transition-colors duration-300">
-      <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-5 md:py-6 w-full max-w-container-max mx-auto">
+    <header className="w-full top-0 sticky bg-white/80 backdrop-blur-md border-b border-outline-variant/20 z-50 transition-all duration-300">
+      <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 md:py-5 w-full max-w-container-max mx-auto">
         <div className="flex items-center">
           <Link href="/">
             <Image
               src="/zuma_ago_full.png"
               alt="Zuma Agro Logo"
-              width={160}
-              height={64}
-              className="h-16 w-auto object-contain"
+              width={200}
+              height={80}
+              className="h-20 w-auto object-contain"
               priority
             />
           </Link>

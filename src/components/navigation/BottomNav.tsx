@@ -37,7 +37,7 @@ export function BottomNav() {
 
   return (
     <>
-      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-outline-variant/30 lg:hidden">
+      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-t border-outline-variant/30 lg:hidden">
         <div className="flex items-center justify-around h-16">
           {navigation.mobile.map((item) => (
             <Link
@@ -64,7 +64,7 @@ export function BottomNav() {
             className="absolute inset-0 bg-black/50"
             onClick={() => setShowMore(false)}
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-surface rounded-t-3xl p-6 border-t border-outline-variant/30">
+          <div className="absolute bottom-0 left-0 right-0 bg-surface/90 backdrop-blur-lg rounded-t-3xl p-6 border-t border-outline-variant/30">
             <div className="w-12 h-1 bg-outline-variant/50 rounded-full mx-auto mb-6" />
             <h3 className="text-lg font-semibold mb-4 text-on-surface">Navigation</h3>
             <div className="space-y-2">
