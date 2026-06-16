@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   title: "Zuma Agro-Allied | Sovereign Agro-Industrial Transformation",
   description: "Zuma Agro-Allied Integrated Enterprise - Sovereign-scale agro-industrial transformation platform for Nigeria",
   icons: {
-    icon: "/zuma_favicon.png?v=2",
-    shortcut: "/zuma_favicon.png?v=2",
-    apple: "/zuma_favicon.png?v=2",
+    icon: "/zuma_favicon.png?v=3",
+    shortcut: "/zuma_favicon.png?v=3",
+    apple: "/zuma_favicon.png?v=3",
   },
 };
 
