@@ -1,4 +1,4 @@
-import { Header, MobileHeader } from "@/components/navigation/Header";
+import { Header } from "@/components/navigation/Header";
 import { Footer } from "@/components/navigation/Footer";
 import { BottomNav } from "@/components/navigation/BottomNav";
 import { PartnershipHeroSection } from "@/components/sections/PartnershipHeroSection";
@@ -15,7 +15,6 @@ export default function PartnershipPage() {
   return (
     <>
       <Header />
-      <MobileHeader />
       <main className="flex-1">
         <PartnershipHeroSection />
         <TierModelSection />

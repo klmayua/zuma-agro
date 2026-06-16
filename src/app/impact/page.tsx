@@ -1,4 +1,4 @@
-import { Header, MobileHeader } from "@/components/navigation/Header";
+import { Header } from "@/components/navigation/Header";
 import { Footer } from "@/components/navigation/Footer";
 import { BottomNav } from "@/components/navigation/BottomNav";
 import { ImpactHeroSection } from "@/components/sections/ImpactHeroSection";
@@ -14,7 +14,6 @@ export default function ImpactPage() {
   return (
     <>
       <Header />
-      <MobileHeader />
       <main className="flex-1">
         <ImpactHeroSection />
         <MultiplierBentoSection />

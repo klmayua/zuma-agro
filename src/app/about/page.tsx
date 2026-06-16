@@ -1,4 +1,4 @@
-import { Header, MobileHeader } from "@/components/navigation/Header";
+import { Header } from "@/components/navigation/Header";
 import { Footer } from "@/components/navigation/Footer";
 import { BottomNav } from "@/components/navigation/BottomNav";
 import { AboutHeroSection } from "@/components/sections/AboutHeroSection";
@@ -17,7 +17,6 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <MobileHeader />
       <main className="flex-1">
         <AboutHeroSection />
         <SBUSection />

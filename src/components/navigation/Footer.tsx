@@ -5,27 +5,27 @@ const footerColumns = [
   {
     title: "Platform",
     links: [
-      { label: "Framework", href: "/framework" },
-      { label: "Strategic Business Units", href: "/platform" },
-      { label: "Operations", href: "/platform" },
-      { label: "Technology Stack", href: "/platform" },
+      { label: "Framework", href: "/strategic-framework" },
+      { label: "Strategic Business Units", href: "/platform-architecture" },
+      { label: "Operations", href: "/platform-architecture" },
+      { label: "Technology Stack", href: "/platform-architecture" },
     ],
   },
   {
     title: "Institutional",
     links: [
-      { label: "Governance Board", href: "/governance" },
-      { label: "ESG Standards", href: "/governance" },
-      { label: "Risk Management", href: "/governance" },
-      { label: "Continuity Planning", href: "/governance" },
+      { label: "Governance Board", href: "/governance-controls" },
+      { label: "ESG Standards", href: "/governance-controls" },
+      { label: "Risk Management", href: "/governance-controls" },
+      { label: "Continuity Planning", href: "/governance-controls" },
     ],
   },
   {
     title: "Access",
     links: [
-      { label: "Investors & DFIs", href: "/investors" },
-      { label: "Contact Enterprise", href: "/partnership" },
-      { label: "Partnership", href: "/partnership" },
+      { label: "Investors & DFIs", href: "/investor-intelligence" },
+      { label: "Contact Enterprise", href: "/institutional-partnerships" },
+      { label: "Partnership", href: "/institutional-partnerships" },
       { label: "Press & Media", href: "/about" },
       { label: "Careers", href: "/about" },
     ],
@@ -47,7 +47,7 @@ export function Footer() {
          <div className="bg-white/5 border border-white/10 rounded-2xl p-xl flex flex-col md:flex-row items-center justify-between gap-xl backdrop-blur-md">
           <div>
             <h4 className="font-headline-md text-[24px] font-bold text-white mb-xs">Sovereign Insights</h4>
-             <p className="w-full text-white/70 font-body-md">Executive briefings on agro-industrial transformation.</p>
+             <p className="text-white/70 font-body-md">Executive briefings on agro-industrial transformation.</p>
           </div>
           <form className="flex w-full md:w-auto max-w-md gap-sm">
             <input
@@ -74,7 +74,7 @@ export function Footer() {
               className="h-full w-auto object-contain brightness-0 invert"
             />
           </div>
-           <p className="w-full font-body-md text-[16px] text-white/70 max-w-sm leading-relaxed">
+           <p className="font-body-md text-[16px] text-white/70 max-w-sm leading-relaxed">
             A sovereign-scale integration architecture connecting production, processing, and distribution across Nigeria.
           </p>
         </div>

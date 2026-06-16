@@ -37,13 +37,13 @@ export function BottomNav() {
 
   return (
     <>
-      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-surface-white border-t border-surface-stone lg:hidden">
+      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white border-t border-outline-variant/30 lg:hidden">
         <div className="flex items-center justify-around h-16">
           {navigation.mobile.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="flex flex-col items-center justify-center gap-1 text-surface-slate hover:text-primary transition-colors"
+              className="flex flex-col items-center justify-center gap-1 text-on-surface-variant hover:text-primary transition-colors"
               onClick={(e) => {
                 if (item.href === '#more') {
                   e.preventDefault();
@@ -64,15 +64,15 @@ export function BottomNav() {
             className="absolute inset-0 bg-black/50"
             onClick={() => setShowMore(false)}
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-surface-white rounded-t-2xl p-6 animate-slideUp">
-            <div className="w-12 h-1 bg-surface-stone rounded-full mx-auto mb-6" />
-            <h3 className="text-lg font-semibold mb-4">Navigation</h3>
+          <div className="absolute bottom-0 left-0 right-0 bg-surface rounded-t-3xl p-6 border-t border-outline-variant/30">
+            <div className="w-12 h-1 bg-outline-variant/50 rounded-full mx-auto mb-6" />
+            <h3 className="text-lg font-semibold mb-4 text-on-surface">Navigation</h3>
             <div className="space-y-2">
               {navigation.primary.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block py-3 px-4 text-surface-charcoal hover:bg-surface-stone/30 rounded-lg transition-colors"
+                  className="block py-3 px-4 text-on-surface-variant hover:bg-surface-container-low rounded-lg transition-colors"
                   onClick={() => setShowMore(false)}
                 >
                   {item.label}
@@ -80,7 +80,7 @@ export function BottomNav() {
               ))}
               <Link
                 href={navigation.cta.href}
-                className="block py-3 px-4 bg-error text-white rounded-lg text-center font-semibold mt-4"
+                className="block py-3 px-4 bg-secondary text-white rounded-lg text-center font-semibold mt-4"
                 onClick={() => setShowMore(false)}
               >
                 {navigation.cta.label}

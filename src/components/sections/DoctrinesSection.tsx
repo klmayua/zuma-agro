@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const doctrines = [
   {
     number: "01",
@@ -34,13 +36,13 @@ export function DoctrinesSection() {
           <h2 className="font-headline-xl text-[40px] leading-tight text-white mb-md font-bold">
             The Five Non-Negotiable Doctrines
           </h2>
-           <p className="w-full font-body-lg text-[20px] text-white/80 max-w-4xl leading-relaxed">
+          <p className="font-body-lg text-[20px] text-white/80 max-w-4xl leading-relaxed">
             Zuma Agro operates on a doctrine of disciplined integration. These principles govern every investment, partnership, and operational decision.
           </p>
         </div>
         <div className="space-y-lg">
           {doctrines.map((doctrine) => (
-            <div key={doctrine.number} className="bg-white/5 backdrop-blur-lg rounded-3xl p-2xl flex flex-col md:flex-row gap-xl items-start border border-white/10">
+            <div key={doctrine.number} className="bg-white/5 backdrop-blur-lg rounded-3xl p-2xl flex flex-col md:flex-row gap-xl items-start">
               <div className="px-md py-sm rounded-lg font-headline-md text-[24px] font-bold shrink-0 border border-secondary/30 bg-secondary/10 text-secondary">
                 {doctrine.number}
               </div>
@@ -52,10 +54,10 @@ export function DoctrinesSection() {
           ))}
         </div>
         <div className="flex justify-start mt-3xl">
-          <a href="/governance" className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-xs shadow-lg">
+          <Link href="/governance-controls" className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-xs shadow-lg">
             Review Institutional Governance
-            <span className="material-symbols-outlined text-[20px]">gavel</span>
-          </a>
+            <span className="material-symbols-outlined text-[20px]" data-icon="gavel">gavel</span>
+          </Link>
         </div>
       </div>
     </section>

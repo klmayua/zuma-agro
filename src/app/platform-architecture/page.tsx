@@ -1,4 +1,4 @@
-import { Header, MobileHeader } from "@/components/navigation/Header";
+import { Header } from "@/components/navigation/Header";
 import { Footer } from "@/components/navigation/Footer";
 import { BottomNav } from "@/components/navigation/BottomNav";
 import { PlatformHeroSection } from "@/components/sections/PlatformHeroSection";
@@ -16,7 +16,6 @@ export default function PlatformPage() {
   return (
     <>
       <Header />
-      <MobileHeader />
       <main className="flex-grow">
         <div className="pt-32 pb-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full paper-texture">
           <PlatformHeroSection />

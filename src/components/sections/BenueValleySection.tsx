@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 export function BenueValleySection() {
   return (
     <section
       className="w-full py-4xl bg-surface"
       style={{
-        backgroundImage: 'linear-gradient(rgba(248, 250, 246, 0.85), rgba(248, 250, 246, 0.85)), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBqqHKPHVLkzA4LxTZJTrbqO_uwxmfFwA48AmMbYv9dIXbVLFI3e_LqQ5OcWlhnQxY6th9KqwCQMgtEdqn5GLL7zCXK7Faf3wJd5rrBmYykSjA2v8CMZfQCtCGL8N8N3qF-LD92TqEW2_hb8Un2dW3zAyiFnQcBcg9pMEZCZXmlCdX9Y7CACd-D2x77G-QfuynjBHPPOZFD2InnQMDDYpCA7n5Fpjx9DNG9a9ICWz6CRLJAu5DQ2vAQqJ2qts0aVL5NCByZt59LrSc")',
+        backgroundImage: 'linear-gradient(rgba(248, 250, 246, 0.85), rgba(248, 250, 246, 0.85)), url("https://lh3.googleusercontent.com/aida/AP1WRLu8jVB0-i5QyMT6apaXxh9-W2ReujqF7Dfj37wyAJKLHw_taYib9ZsZH1jcQ9O_RR-Y3VQVSEvjLzDgxtyeVAmMOJ5iNk25WucNvY8gvyEpak0hEdtJtcCNGIcb5FraOJkD_sCKuSQAvN5KjvLBiBNa_L6Vj7rDZEPysyPGtCzj_mCp6VulJKA0k8eVmSs73ZtR-wMcYAP2Sl9oTJv1hSy5eFuBSJwpzNhDuUahHtVRQ6jPw4f2L4dNu4Y")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -20,10 +22,10 @@ export function BenueValleySection() {
               <h2 className="font-headline-xl text-[40px] leading-tight text-primary mb-lg font-bold">
                 The Benue Valley Corridor Pilot
               </h2>
-              <p className="w-full font-body-lg text-[20px] text-on-surface-variant mb-lg leading-relaxed">
+              <p className="font-body-lg text-[20px] text-on-surface-variant mb-lg leading-relaxed">
                 Zuma Agro launches as a &apos;Minimum Viable Zuma&apos; – a commercially disciplined production unit designed to prove unit economics before capital is committed to replication.
               </p>
-              <p className="w-full font-body-md text-[18px] text-on-surface-variant mb-xl leading-relaxed">
+              <p className="font-body-md text-[18px] text-on-surface-variant mb-xl leading-relaxed">
                 The initial pilot concentrates on the Benue Valley corridor (Benue, Nasarawa, Taraba) focusing on maize and soybeans. It includes three initial production clusters (5,000–10,000 hectares each) within 100km of a central processing hub near Makurdi, featuring grain dryers, storage silos, a feed mill, and an oil processing line.
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-lg text-primary font-headline-md text-[18px] font-semibold">
@@ -45,10 +47,10 @@ export function BenueValleySection() {
                 </li>
               </ul>
               <div className="mt-xl">
-                <a href="/framework" className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center shadow-lg">
+                <Link href="/strategic-framework" className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center shadow-lg">
                   View Phase One Roadmap
-                  <span className="material-symbols-outlined text-[20px] ml-xs">map</span>
-                </a>
+                  <span className="material-symbols-outlined text-[20px] ml-xs" data-icon="map">map</span>
+                </Link>
               </div>
             </div>
             <div className="lg:w-1/3 flex justify-center w-full">

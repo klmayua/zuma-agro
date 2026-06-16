@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden min-h-[700px] flex flex-col justify-center py-4xl px-margin-mobile md:px-margin-desktop">
@@ -20,14 +22,14 @@ export function HeroSection() {
           Building Nigeria&apos;s national productivity infrastructure for food security and continental competitiveness. Zuma Agro-Allied is designed to solve Nigeria&apos;s structural food system failures through a disciplined, integrated, and replicable operating architecture.
         </p>
         <div className="flex flex-col sm:flex-row gap-md mt-md">
-          <a href="/framework" className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-xs shadow-lg">
+          <Link href="/strategic-framework" className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-xs shadow-lg">
             Explore Framework
-            <span className="material-symbols-outlined text-[20px]">arrow_forward</span>
-          </a>
-          <a href="/investors" className="bg-transparent border-2 border-white/30 text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:bg-white/10 transition-colors flex items-center justify-center backdrop-blur-sm">
+            <span className="material-symbols-outlined text-[20px]" data-icon="arrow_forward">arrow_forward</span>
+          </Link>
+          <Link href="/investor-intelligence" className="bg-transparent border-2 border-white/30 text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:bg-white/10 transition-colors flex items-center justify-center backdrop-blur-sm">
             Download Prospectus
-            <span className="material-symbols-outlined text-[20px] ml-xs">download</span>
-          </a>
+            <span className="material-symbols-outlined text-[20px] ml-xs" data-icon="download">download</span>
+          </Link>
         </div>
       </div>
     </section>

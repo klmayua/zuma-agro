@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const sbus = [
   {
     icon: "landscape",
@@ -45,7 +47,7 @@ export function SBUGrid() {
           <h2 className="font-headline-xl text-[40px] leading-tight text-primary mb-md font-bold">
             Integrated Operating Architecture
           </h2>
-           <p className="w-full font-body-lg text-[24px] text-on-surface max-w-4xl leading-relaxed font-light">
+          <p className="font-body-lg text-[24px] text-on-surface max-w-4xl leading-relaxed font-light">
             Zuma Agro operates as a holding company with six Strategic Business Units (SBUs) executing the platform logic. This structure enables risk segregation, capital stack optimisation, and governance clarity.
           </p>
         </div>
@@ -64,10 +66,10 @@ export function SBUGrid() {
           ))}
         </div>
         <div className="flex justify-start mt-3xl">
-          <a href="/platform" className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-xs shadow-lg">
+          <Link href="/platform-architecture" className="bg-secondary text-white font-label-md text-label-md h-[56px] px-[40px] rounded hover:opacity-90 transition-opacity flex items-center justify-center gap-xs shadow-lg">
             Explore Business Units
             <span className="material-symbols-outlined text-[20px]">account_balance</span>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

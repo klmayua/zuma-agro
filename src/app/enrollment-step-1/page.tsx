@@ -1,34 +1,32 @@
-import { Header, MobileHeader } from "@/components/navigation/Header";
+import { Header } from "@/components/navigation/Header";
 import { Footer } from "@/components/navigation/Footer";
 import { BottomNav } from "@/components/navigation/BottomNav";
 import { ProgressIndicator } from "@/components/sections/ProgressIndicator";
-import { EnrollmentStep3Form } from "@/components/forms/EnrollmentStep3Form";
+import { EnrollmentStep1Form } from "@/components/forms/EnrollmentStep1Form";
 import { Badge } from "@/components/ui/Badge";
 
 export const metadata = {
-  title: "Step 3: Strategic Mandate Alignment | Zuma Agro-Allied",
+  title: "Step 1: Entity Classification | Zuma Agro-Allied",
   description:
-    "Align your geographic corridor and commodity interests with Zuma Agro-Allied's strategic mandate.",
+    "Begin your enrollment with Zuma Agro-Allied by registering your entity classification.",
 };
 
-export default function EnrollmentStep3Page() {
+export default function EnrollmentStep1Page() {
   return (
     <>
       <Header />
-      <MobileHeader />
       <main className="flex-1">
-        <ProgressIndicator currentStep={3} />
+        <ProgressIndicator currentStep={1} />
         <section className="max-w-[720px] mx-auto px-10 md:px-6 py-16">
-          <Badge variant="outline" className="mb-4">Step 3 of 4</Badge>
+          <Badge variant="outline" className="mb-4">Step 1 of 4</Badge>
           <h1 className="text-h3 md:text-h2 font-semibold text-surface-charcoal mb-3">
-            Strategic Mandate Alignment
+            Institutional Classification
           </h1>
           <p className="text-body-lg text-surface-slate mb-10">
-            Define your operational corridor, commodity focus, and resource commitment to complete
-            the mandate alignment.
+            Establish your organizational identity to align with the Sovereign framework&apos;s production, processing, and distribution architecture.
           </p>
           <div className="bg-surface-white border border-surface-stone rounded-xl p-8 md:p-10">
-            <EnrollmentStep3Form />
+            <EnrollmentStep1Form />
           </div>
         </section>
       </main>

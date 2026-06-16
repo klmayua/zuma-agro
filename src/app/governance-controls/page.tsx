@@ -1,4 +1,4 @@
-import { Header, MobileHeader } from "@/components/navigation/Header";
+import { Header } from "@/components/navigation/Header";
 import { Footer } from "@/components/navigation/Footer";
 import { BottomNav } from "@/components/navigation/BottomNav";
 import { GovernanceHeroSection } from "@/components/sections/GovernanceHeroSection";
@@ -14,7 +14,6 @@ export default function GovernancePage() {
   return (
     <>
       <Header />
-      <MobileHeader />
       <main className="flex-1 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
         <GovernanceHeroSection />
         <ControlsBentoSection />
