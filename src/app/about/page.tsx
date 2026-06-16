@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 -mt-[72px] md:-mt-[100px]">
         <AboutHeroSection />
         <SBUSection />
         <section className="py-stack-lg md:py-[120px] px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">

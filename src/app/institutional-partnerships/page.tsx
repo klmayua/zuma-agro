@@ -15,7 +15,7 @@ export default function PartnershipPage() {
   return (
     <>
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 -mt-[72px] md:-mt-[100px]">
         <PartnershipHeroSection />
         <TierModelSection />
         <SovereignAlignmentSection />

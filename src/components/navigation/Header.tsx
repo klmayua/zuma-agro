@@ -9,7 +9,7 @@ export function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="w-[calc(100%-2rem)] max-w-container-max mx-auto top-4 sticky bg-white/80 backdrop-blur-md border border-outline-variant/30 rounded-2xl shadow-elevated z-50 transition-all duration-300">
+    <header className="w-[calc(100%-2rem)] max-w-container-max mx-auto top-4 sticky bg-white/85 backdrop-blur-md border-[0.5px] border-secondary/35 rounded-2xl shadow-elevated z-50 transition-all duration-300">
       <div className="flex justify-between items-center px-4 md:px-8 py-2.5 md:py-3.5 w-full">
         {/* Left column: Logo wrapper */}
         <div className="flex-1 flex justify-start items-center">
