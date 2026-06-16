@@ -10,7 +10,7 @@ export function Header() {
 
   return (
     <header className="w-full top-0 sticky bg-white/80 backdrop-blur-md border-b border-outline-variant/20 z-50 transition-all duration-300">
-      <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-4 md:py-5 w-full max-w-container-max mx-auto">
+      <div className="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-3 md:py-5 w-full max-w-container-max mx-auto">
         <div className="flex items-center">
           <Link href="/">
             <Image
@@ -18,7 +18,7 @@ export function Header() {
               alt="Zuma Agro Logo"
               width={200}
               height={80}
-              className="h-20 w-auto object-contain"
+              className="h-10 md:h-20 w-auto object-contain"
               priority
             />
           </Link>
@@ -40,12 +40,13 @@ export function Header() {
         </nav>
         <Link
           href={navigation.cta.href}
-          className="bg-secondary text-white font-label-md text-label-md h-[40px] md:h-[56px] px-[16px] md:px-[40px] inline-flex items-center justify-center rounded hover:opacity-90 transition-all shadow-lg flex gap-xs text-[11px] md:text-label-md font-bold"
+          className="bg-secondary text-white font-label-bold text-label-bold h-9 md:h-12 px-3 md:px-6 inline-flex items-center justify-center rounded hover:opacity-90 transition-all shadow-md gap-1.5 text-[11px] md:text-sm font-bold"
         >
-          <span className="material-symbols-outlined text-[16px] md:text-[20px]" data-icon="admin_panel_settings">
+          <span className="material-symbols-outlined text-[14px] md:text-[18px]" data-icon="admin_panel_settings">
             admin_panel_settings
           </span>
-          <span>Executive Access</span>
+          <span className="md:hidden">Access</span>
+          <span className="hidden md:inline">Executive Access</span>
         </Link>
       </div>
     </header>

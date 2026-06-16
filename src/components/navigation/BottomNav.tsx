@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { navigation } from "@/lib/design-tokens";
 
 const icons = {
@@ -34,39 +35,76 @@ const icons = {
 
 export function BottomNav() {
   const [showMore, setShowMore] = useState(false);
+  const pathname = usePathname();
+
+  const isTabActive = (itemHref: string) => {
+    if (itemHref === "/") return pathname === "/";
+    if (itemHref === "/about") return pathname === "/about";
+    if (itemHref === "/strategic-framework") return pathname === "/strategic-framework";
+    if (itemHref === "/investor-intelligence") return pathname === "/investor-intelligence";
+    if (itemHref === "#more") {
+      const moreRoutes = [
+        "/governance-controls",
+        "/impact",
+        "/institutional-partnerships",
+        "/platform-architecture",
+        "/enrollment-step-1",
+        "/enrollment-step-2",
+        "/enrollment-step-3",
+        "/enrollment-step-4"
+      ];
+      return moreRoutes.includes(pathname) || showMore;
+    }
+    return false;
+  };
 
   return (
     <>
-      <nav className="fixed bottom-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-t border-outline-variant/30 lg:hidden">
-        <div className="flex items-center justify-around h-16">
-          {navigation.mobile.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="flex flex-col items-center justify-center gap-1 text-on-surface-variant hover:text-primary transition-colors"
-              onClick={(e) => {
-                if (item.href === '#more') {
-                  e.preventDefault();
-                  setShowMore(true);
-                }
-              }}
-            >
-              {icons[item.icon as keyof typeof icons]}
-              <span className="text-[10px] font-medium">{item.label}</span>
-            </Link>
-          ))}
-        </div>
-      </nav>
+      <div className="fixed bottom-4 left-4 right-4 z-50 bg-white/90 backdrop-blur-md border border-outline-variant/20 rounded-2xl shadow-elevated lg:hidden py-2 px-1">
+        <nav className="grid grid-cols-5 w-full justify-items-center">
+          {navigation.mobile.map((item) => {
+            const isActive = isTabActive(item.href);
+            return (
+              <Link
+                key={item.label}
+                href={item.href}
+                className="w-full flex flex-col items-center justify-center py-1 transition-all duration-300 active:scale-95"
+                onClick={(e) => {
+                  if (item.href === '#more') {
+                    e.preventDefault();
+                    setShowMore(true);
+                  }
+                }}
+              >
+                <div className={`py-1 px-3.5 rounded-full transition-all duration-300 flex items-center justify-center ${
+                  isActive
+                    ? "bg-primary/10 text-primary scale-105"
+                    : "text-on-surface-variant hover:text-primary hover:bg-surface-container-low/50"
+                }`}>
+                  {icons[item.icon as keyof typeof icons]}
+                </div>
+                <span className={`text-[10px] tracking-tight transition-all duration-300 mt-0.5 ${
+                  isActive
+                    ? "text-primary font-bold scale-105"
+                    : "text-on-surface-variant font-medium"
+                }`}>
+                  {item.label}
+                </span>
+              </Link>
+            );
+          })}
+        </nav>
+      </div>
 
       {showMore && (
         <div className="fixed inset-0 z-[60] lg:hidden">
           <div
-            className="absolute inset-0 bg-black/50"
+            className="absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity duration-300"
             onClick={() => setShowMore(false)}
           />
-          <div className="absolute bottom-0 left-0 right-0 bg-surface/90 backdrop-blur-lg rounded-t-3xl p-6 border-t border-outline-variant/30">
-            <div className="w-12 h-1 bg-outline-variant/50 rounded-full mx-auto mb-6" />
-            <h3 className="text-lg font-semibold mb-4 text-on-surface">Navigation</h3>
+          <div className="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md rounded-t-[32px] p-6 pb-10 border-t border-outline-variant/20 shadow-institutional animate-fadeIn">
+            <div className="w-12 h-1 bg-outline-variant/30 rounded-full mx-auto mb-6" />
+            <h3 className="text-xl font-bold mb-4 text-primary tracking-tight">Navigation</h3>
             <div className="space-y-2">
               {navigation.primary
                 .filter(item => 
@@ -74,22 +112,32 @@ export function BottomNav() {
                   item.href !== '/strategic-framework' && 
                   item.href !== '/investor-intelligence'
                 )
-                .map((item) => (
-                  <Link
-                    key={item.href}
-                    href={item.href}
-                    className="block py-3 px-4 text-on-surface-variant hover:bg-surface-container-low rounded-lg transition-colors"
-                    onClick={() => setShowMore(false)}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
+                .map((item) => {
+                  const isActive = pathname === item.href;
+                  return (
+                    <Link
+                      key={item.href}
+                      href={item.href}
+                      className={`flex items-center justify-between py-3.5 px-4 rounded-xl transition-all duration-300 ${
+                        isActive
+                          ? "bg-primary/10 text-primary font-bold"
+                          : "text-on-surface-variant hover:text-primary hover:bg-surface-container-low/50"
+                      }`}
+                      onClick={() => setShowMore(false)}
+                    >
+                      <span className="font-medium">{item.label}</span>
+                      <span className="material-symbols-outlined text-[18px] opacity-70">
+                        chevron_right
+                      </span>
+                    </Link>
+                  );
+                })}
               <Link
                 href={navigation.cta.href}
-                className="block py-3 px-4 bg-secondary text-white rounded-lg text-center font-semibold mt-4"
+                className="flex items-center justify-center py-3.5 px-4 bg-secondary text-white rounded-xl text-center font-bold mt-4 shadow-md active:scale-95 transition-all duration-300 hover:opacity-95"
                 onClick={() => setShowMore(false)}
               >
-                {navigation.cta.label}
+                <span>{navigation.cta.label}</span>
               </Link>
             </div>
           </div>
