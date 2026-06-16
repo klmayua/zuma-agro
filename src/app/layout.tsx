@@ -18,6 +18,9 @@ const libreCaslon = Libre_Caslon_Text({
 export const metadata: Metadata = {
   title: "Zuma Agro-Allied | Sovereign Agro-Industrial Transformation",
   description: "Zuma Agro-Allied Integrated Enterprise - Sovereign-scale agro-industrial transformation platform for Nigeria",
+  icons: {
+    icon: "/zuma_favicon.png",
+  },
 };
 
 export default function RootLayout({
